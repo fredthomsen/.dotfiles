@@ -1,0 +1,46 @@
+[core]
+    editor = vim
+    excludesfile = ~/.gitignore
+[merge]
+    tool = vimdiff
+[color]
+    ui = auto
+[alias]
+    co = checkout
+    br = branch
+    ci = commit
+    ct = commit
+    st = status
+    sh = show
+    shf = show --name-status
+    chp = cherry-pick
+    mg = merge --no-ff
+    rb = rebase
+    t = tag
+    f = fetch
+    ps = push
+    pl = pull
+
+    stg = add
+    stga = add -A
+    unstg = reset
+    unmod = checkout --
+    nuke = reset --hard
+
+    dfmod = diff
+    dfstg = diff --cached
+    rudumb = diff --name-status HEAD~1 HEAD
+
+    last = log -1 HEAD
+    vlog = log --graph --oneline --decorate --all    
+    vblog = log --graph --oneline --decorate
+    revision = describe --match v[0-9]*
+        
+[init]
+    templatedir = ~/.git_template
+[branch]
+    autosetuprebase = always
+[push]
+    default = simple
+[fetch]
+	prune = true

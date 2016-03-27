@@ -1,0 +1,63 @@
+#!/bin/bash
+#
+# Fred Thomsen
+# ~/.bash_functions: Personal bash functions
+
+# Where/What is this binary? Shows extended ls output
+function what() {
+    which $1 | xargs ls -la
+}
+
+# remind me, its important!
+# usage: remindme <time> <text>
+# e.g.: remindme 10m "omg, the pizza"
+function remindme() {
+    sleep $1 && zenity --info --text "$2" &
+}
+
+# remove line n from a file (removeline N FILE)
+function removeline () { 
+    sed -i $1d $2; 
+}
+
+# get the country of a specific IP address using ip2location (ip2loc IP)
+function ip2loc() { 
+    wget -qO - www.ip2location.com/$1 | grep "<span id=\"dgLookup__ctl2_lblICountry\">" | sed 's/<[^>]*>//g; s/^[\t]*//; s/&quot;/"/g; s/</</g; s/>/>/g; s/&amp;/\&/g'; 
+}
+
+# awesome!  CD AND LA. I never use 'cd' anymore...
+function cl() { 
+    cd "$@" && la; 
+}
+
+# Extract all compressed files
+function extract() {
+    if [ -f $1 ] ; then
+        case $1 in
+            *.tar.bz2)   tar xvjf $1    ;;
+            *.tar.gz)    tar xvzf $1    ;;
+            *.bz2)       bunzip2 $1     ;;
+            *.rar)       rar x $1       ;;
+            *.gz)        gunzip $1      ;;
+            *.tar)       tar xvf $1     ;;
+            *.tbz2)      tar xvjf $1    ;;
+            *.tgz)       tar xvzf $1    ;;
+            *.zip)       unzip $1       ;;
+            *.Z)         uncompress $1  ;;
+            *.7z)        7z x $1        ;;
+            *)           echo "don't know how to extract '$1'..." ;;
+        esac
+    else
+        echo "'$1' is not a valid file!"
+    fi
+}
+
+# Open file in chrome
+function chrome() {
+    google-chrome "$1"
+}
+
+# Google it!
+function google() {
+    google-chrome "https://google.com/search?q=$*"
+}
