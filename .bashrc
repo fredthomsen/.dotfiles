@@ -143,7 +143,7 @@ GIT_PS1_DESCRIBE_STYLE=describe
 # Change host colors depending on what host is being used
 if [ "$HOSTNAME" = odin ]; then
     HOST_COLOR=$BRed
-elif [ "$HOSTNAME" = starload ]; then
+elif [ "$HOSTNAME" = starlord ]; then
     HOST_COLOR=$BPurple
 else
     HOST_COLOR=$BCyan
