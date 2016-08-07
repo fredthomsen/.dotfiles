@@ -5,7 +5,7 @@
 all: bash git fonts themes config
 bash: bash_aliases bash_functions bash_logout bashrc profile 
 git: gitconfig gitignore
-config: xfce4
+config: xfce4 kupfer
 
 bash_aliases: 
 	ln -sf ~/.dotfiles/.bash_aliases ~/.bash_aliases
@@ -36,3 +36,6 @@ gitignore:
 
 xfce4:
 	ln -sf ~/.dotfiles/.config/xfce4 ~/.config/xfce4
+
+kupfer:
+	ln -sf ~/.dotfiles/.config/kupfer ~/.config/kupfer
