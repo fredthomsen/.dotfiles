@@ -44,6 +44,7 @@ gitignore:
 
 xfce4:
 	ln -sf ~/.dotfiles/.config/xfce4 ~/.config/xfce4
+	ln -sf ~/.dotfiles/.config/autostart ~/.config/autostart
 
 kupfer:
 	ln -sf ~/.dotfiles/.config/kupfer ~/.config/kupfer

@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Version=0.9.4
+Type=Application
+Name=reddit
+Comment=reddit
+Exec=/opt/google/chrome/google-chrome --profile-directory=Default --app-id=pmfcbbijgnhoebddbjpmlikabnbnddgb
+OnlyShowIn=XFCE;
+StartupNotify=false
+Terminal=false
+Hidden=false
+
