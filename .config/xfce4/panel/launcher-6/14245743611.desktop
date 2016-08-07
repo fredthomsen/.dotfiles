@@ -1,0 +1,16 @@
+[Desktop Entry]
+Name=Meld
+GenericName=Diff Viewer
+X-GNOME-FullName=Meld Diff Viewer
+Comment=Compare and merge your files
+Exec=meld %F
+Terminal=false
+Type=Application
+Icon=meld
+MimeType=application/x-meld-comparison;
+StartupNotify=true
+Categories=GTK;Development;
+X-GNOME-Bugzilla-Bugzilla=GNOME
+X-GNOME-Bugzilla-Product=meld
+X-GNOME-Bugzilla-Component=general
+X-XFCE-Source=file:///usr/share/applications/meld.desktop

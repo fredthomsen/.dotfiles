@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Terminal=false
+Type=Application
+Name=ScienceLogic Mail
+Exec=/opt/google/chrome/google-chrome --profile-directory=Default --app-id=ifghhgikfhibajkenfihnnmopcgfjnnj
+Icon=chrome-ifghhgikfhibajkenfihnnmopcgfjnnj-Default
+StartupWMClass=crx_ifghhgikfhibajkenfihnnmopcgfjnnj
+X-XFCE-Source=file:///home/fred/.local/share/applications/chrome-ifghhgikfhibajkenfihnnmopcgfjnnj-Default.desktop

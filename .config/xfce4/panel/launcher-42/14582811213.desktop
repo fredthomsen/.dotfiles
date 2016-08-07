@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Terminal=false
+Type=Application
+Name=JIRA
+Exec=/opt/google/chrome/google-chrome --profile-directory=Default --app-id=cpglikmeijcijnjcahnfnfdggcpjeoig
+Icon=chrome-cpglikmeijcijnjcahnfnfdggcpjeoig-Default
+StartupWMClass=crx_cpglikmeijcijnjcahnfnfdggcpjeoig
+X-XFCE-Source=file:///home/fred/.local/share/applications/chrome-cpglikmeijcijnjcahnfnfdggcpjeoig-Default.desktop

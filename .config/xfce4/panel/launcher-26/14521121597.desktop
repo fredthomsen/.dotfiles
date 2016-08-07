@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Terminal=false
+Type=Application
+Name=Netflix
+Exec=/opt/google/chrome/google-chrome --profile-directory=Default --app-id=deceagebecbceejblnlcjooeohmmeldh
+Icon=chrome-deceagebecbceejblnlcjooeohmmeldh-Default
+StartupWMClass=crx_deceagebecbceejblnlcjooeohmmeldh
+X-XFCE-Source=file:///home/fred/.local/share/applications/chrome-deceagebecbceejblnlcjooeohmmeldh-Default.desktop

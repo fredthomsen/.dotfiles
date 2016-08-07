@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Terminal=false
+Type=Application
+Name=Reditr - The Best Reddit Client
+Exec=/opt/google/chrome/google-chrome --profile-directory=Default --app-id=pmfcbbijgnhoebddbjpmlikabnbnddgb
+Icon=chrome-pmfcbbijgnhoebddbjpmlikabnbnddgb-Default
+StartupWMClass=crx_pmfcbbijgnhoebddbjpmlikabnbnddgb
+X-XFCE-Source=file:///home/fred/.local/share/applications/chrome-pmfcbbijgnhoebddbjpmlikabnbnddgb-Default.desktop
