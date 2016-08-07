@@ -2,7 +2,7 @@
 #
 # Creates symlink to appropriate dot file from home directory
 
-all: bash git fonts themes config
+all: bash git fonts themes icons config
 bash: bash_aliases bash_functions bash_logout bashrc profile 
 git: gitconfig gitignore
 config: xfce4 kupfer
@@ -30,6 +30,9 @@ themes:
 
 fonts:
 	ln -sf ~/.dotfiles/.fonts ~/.fonts
+
+icons:
+	ln -sf ~/.dotfiles/.icons ~/.icons
 
 gitignore:
 	ln -sf ~/.dotfiles/.gitignore ~/.gitignore
