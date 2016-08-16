@@ -10,6 +10,9 @@ config: xfce4 kupfer
 bash_aliases: 
 	ln -sf ~/.dotfiles/.bash_aliases ~/.bash_aliases
 
+bash_colors:
+	ln -sf ~/.dotfiles/.bash_colors ~/.bash_colors
+
 bash_functions: 
 	ln -sf ~/.dotfiles/.bash_functions ~/.bash_functions
 
