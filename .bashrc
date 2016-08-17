@@ -190,7 +190,7 @@ git config --global user.email "$EMAIL"
 git config --global user.name "$NAME"
 
 export EDITOR=vim
-export MANPAGER="/usr/bin/most"
+export PAGER="/usr/bin/most"
 
 # Set additional random paths
 export JAVA_HOME='/usr/local/java/jdk1.8.0_45'
