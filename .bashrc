@@ -72,7 +72,7 @@ GIT_PS1_DESCRIBE_STYLE=describe
 # Change host colors depending on what host is being used
 if [ "$HOSTNAME" = odin ]; then
     HOST_COLOR=$P_BRed
-elif [ "$HOSTNAME" = starlord ]; then
+elif [ "$HOSTNAME" = starlord ] || [ "$HOSTNAME" = fthomsendev ]; then
     HOST_COLOR=$P_BPurple
 else
     HOST_COLOR=$P_BCyan
@@ -177,7 +177,7 @@ if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
 
-if [ "$HOSTNAME" = starlord ]; then
+if [ "$HOSTNAME" = starlord ] || [ "$HOSTNAME" = fthomsendev ]; then
     export EMAIL="$WORK_EMAIL"
     export NAME='fthomsen'
 else
