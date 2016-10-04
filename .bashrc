@@ -41,6 +41,11 @@ PathFull="\W"
 NewLine="\n"
 Jobs="\j"
 
+# set up git prompt for macos
+if [ -f /Applications/Xcode.app/Contents/Developer/usr/share/git-core/git-prompt.sh ]; then
+    . /Applications/Xcode.app/Contents/Developer/usr/share/git-core/git-prompt.sh
+fi
+
 # set a fancy prompt (non-color, unless we know we "want" color)
 case "$TERM" in
     xterm-color) color_prompt=yes;;
@@ -190,7 +195,7 @@ git config --global user.email "$EMAIL"
 git config --global user.name "$NAME"
 
 export EDITOR=vim
-export PAGER="/usr/bin/most"
+export PAGER=most
 
 # Set additional random paths
 export JAVA_HOME='/usr/local/java/jdk1.8.0_45'
