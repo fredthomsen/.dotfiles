@@ -33,14 +33,6 @@ if [ -f ~/.bash_colors ]; then
     . ~/.bash_colors
 fi
 
-# Various variables you might want for your PS1 prompt instead
-Time12h="\T"
-Time12a="\@"
-PathShort="\w"
-PathFull="\W"
-NewLine="\n"
-Jobs="\j"
-
 # set up git prompt for macos
 if [ -f /Applications/Xcode.app/Contents/Developer/usr/share/git-core/git-prompt.sh ]; then
     . /Applications/Xcode.app/Contents/Developer/usr/share/git-core/git-prompt.sh
