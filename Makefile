@@ -3,7 +3,7 @@
 # Creates symlink to appropriate dot file from home directory
 
 all: bash git fonts themes icons desktop config
-bash: bash_aliases bash_functions bash_logout bashrc profile 
+bash: bash_aliases bash_functions bash_logout bash_colors bashrc profile 
 git: gitconfig gitignore
 config: xfce4 kupfer
 
