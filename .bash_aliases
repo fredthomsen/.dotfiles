@@ -6,7 +6,11 @@
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
-    alias ls='ls --color=auto'
+    if [ $(uname) = Darwin ]; then
+        alias ls='ls -G'
+    else
+        alias ls='ls --color=auto'
+    fi
 
     alias grep='grep --color=auto'
     alias fgrep='fgrep --color=auto'
@@ -28,12 +32,18 @@ alias mkdir='mkdir -p'     # always make directory
 alias top='htop'
 
 # terminal aliases
-alias xfce4-terminal='xfce4-terminal --maximize'
-alias terminal='xfce4-terminal --maximize'
-alias term='xfce4-terminal --maximize'
+if [ $(uname) = Linux ]; then
+    alias xfce4-terminal='xfce4-terminal --maximize'
+    alias terminal='xfce4-terminal --maximize'
+    alias term='xfce4-terminal --maximize'
+fi
 
 # ls aliases
-alias ls='ls -hF --color'  # add colors for filetype recognition
+if [ $(uname) = Darwin ]; then
+    alias ls='ls -hFG'  # add colors for filetype recognition
+else
+    alias ls='ls -hF --color'  # add colors for filetype recognition
+fi
 alias lt='ls -ltr'         # sort by date, most recent last
 alias la='ls -Al'          # show hidden files
 alias ll='ls -l --group-directories-first'
