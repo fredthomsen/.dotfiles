@@ -76,7 +76,6 @@ else
 fi
 
 if [ "$color_prompt" = yes ]; then
-    #PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[01;34m\]:\w\[\033[01;33m\]$(__git_ps1)\[\033[01;34m\]\$\[\033[00m\] '
     PS1="${debian_chroot:+($debian_chroot)}$P_BCyan\u@$HOST_COLOR\h$P_BBlue:\w$P_BYellow\$(__git_ps1)$P_BGreen\$$P_Color_Off "
 else
     PS1="${debian_chroot:+($debian_chroot)}\u@\h:\w\$(__git_ps1)\$ "
@@ -174,17 +173,11 @@ if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
 
-if [ "$HOSTNAME" = starlord ] || [ "$HOSTNAME" = fthomsendev ]; then
-    export EMAIL="$WORK_EMAIL"
-    export NAME='fthomsen'
+if [[ "$HOSTNAME" == silo2060* ]]; then
+    . $HOME/.git_work
 else
-    export EMAIL="$HOME_EMAIL"
-    export NAME='Fred Thomsen'
+    . $HOME/.git_home
 fi
-
-# Set git name and email appropriately
-git config --global user.email "$EMAIL"
-git config --global user.name "$NAME"
 
 export EDITOR=vim
 export PAGER=most
