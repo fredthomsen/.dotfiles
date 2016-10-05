@@ -19,7 +19,7 @@ fi
 
 alias free='free -m'
 
-alias df='df -Th'
+alias df='df -h'
 alias du='du -h'
 alias ..='cd ..'
 alias h='history'
