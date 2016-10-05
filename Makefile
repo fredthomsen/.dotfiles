@@ -27,6 +27,8 @@ profile:
 
 gitconfig:
 	ln -sf ~/.dotfiles/.gitconfig ~/.gitconfig
+	ln -sf ~/.dotfiles/.git_home ~/.git_home
+	ln -sf ~/.dotfiles/.git_work ~/.git_work
 
 themes:
 	ln -sf ~/.dotfiles/.themes ~/.themes

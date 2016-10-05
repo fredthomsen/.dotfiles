@@ -1,0 +1,7 @@
+# Fred Thomsen
+# Git work configuration
+
+export EMAIL="$WORK_EMAIL"
+export NAME='fthomsen'
+git config --global user.email "$EMAIL"
+git config --global user.name "$NAME"
