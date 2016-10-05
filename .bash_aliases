@@ -20,7 +20,7 @@ alias du='du -h'
 alias ..='cd ..'
 alias h='history'
 
-alias rm='rm -I'
+alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
 
