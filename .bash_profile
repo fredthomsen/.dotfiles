@@ -12,15 +12,7 @@
 
 # if running bash
 if [ -n "$BASH_VERSION" ]; then
-    if [ -f "$HOME/.profile" ]; then
-	    . "$HOME/.profile"
-    fi
-
     if [ -f "$HOME/.bashrc" ]; then
 	    . "$HOME/.bashrc"
-    fi
-
-    if [ -f "$HOME/.bash_login" ]; then
-    	. "$HOME/.bash_login"
     fi
 fi
