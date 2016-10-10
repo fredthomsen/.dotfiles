@@ -82,4 +82,3 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
 elif [ -f $(brew --prefix)/etc/bash_completion ]; then
     . $(brew --prefix)/etc/bash_completion
 fi
-
