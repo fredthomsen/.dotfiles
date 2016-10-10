@@ -28,16 +28,6 @@ if [ -z "$debian_chroot" ] && [ -r /etc/debian_chroot ]; then
     debian_chroot=$(cat /etc/debian_chroot)
 fi
 
-# Colors file
-if [ -f ~/.bash_colors ]; then
-    . ~/.bash_colors
-fi
-
-# set up git prompt for macos
-if [ -f /Applications/Xcode.app/Contents/Developer/usr/share/git-core/git-prompt.sh ]; then
-    . /Applications/Xcode.app/Contents/Developer/usr/share/git-core/git-prompt.sh
-fi
-
 # set a fancy prompt (non-color, unless we know we "want" color)
 case "$TERM" in
     xterm-color) color_prompt=yes;;
@@ -53,18 +43,11 @@ if [ -n "$force_color_prompt" ]; then
 	# We have color support; assume it's compliant with Ecma-48
 	# (ISO/IEC-6429). (Lack of such support is extremely rare, and such
 	# a case would tend to support setf rather than setaf.)
-	color_prompt=yes
+    	color_prompt=yes
     else
-	color_prompt=
+	    color_prompt=
     fi
 fi
-
-# Git variables for prompt
-GIT_PS1_SHOWDIRTYSTATE=true
-GIT_PS1_SHOWCOLORHINTS=true
-GIT_PS1_SHOWSTASHSTATE=true
-GIT_PS1_SHOWUPSTREAM='git verbose'
-GIT_PS1_DESCRIBE_STYLE=describe
 
 # Change host colors depending on what host is being used
 if [ "$HOSTNAME" = odin ]; then
@@ -91,25 +74,6 @@ xterm*|rxvt*)
     ;;
 esac
 
-# Alias definitions.
-# You may want to put all your additions into a separate file like
-# ~/.bash_aliases, instead of adding them here directly.
-# See /usr/share/doc/bash-doc/examples in the bash-doc package.
-
-if [ -f ~/.bash_aliases ]; then
-    . ~/.bash_aliases
-fi
-
-# Separate functions file
-if [ -f ~/.bash_functions ]; then
-    . ~/.bash_functions
-fi
-
-# Private file
-if [ -f ~/.bash_private ]; then
-    . ~/.bash_private
-fi
-
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
 # sources /etc/bash.bashrc).
@@ -118,74 +82,3 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
 elif [ -f $(brew --prefix)/etc/bash_completion ]; then
     . $(brew --prefix)/etc/bash_completion
 fi
-
-# I use ctrl-s in vim, so this is needed
-stty -ixon
-
-export TERM=xterm-256color
-KERNEL=$(uname -a)
-
-OLD_IFS="$IFS"
-IFS=
-
-# I like Fallout...
-greet='
-                                       ▄▓█▀▀▀▀▀█▄                           
-               ▄▄▓█`       ,▄▄▓▓▄▄▄▄▄@██▀!√√√√√└▀█▄                         
-            .▓█▀██       #█▀▀└:.!╙▀▀██▀:√√√√√√√√√!▀▀█▓▓▄▄                   
-           ╓█▀..▀█▓▄▄▄▄▓▀▀:√√√√√√√√√√√√√√√√√√√√√√√√√░░▀▀██▄                 
-           ██.√√√!▀▀▀▀▀:√√√√√√√√√√√√√√√√√√√√√√√√√√√√╠░░░░▀█▄                
-           █▌√√√√√√√√√√√√√▄▄▄▄▄.√√√√√√√╓▄▄▄.√√√√√√√√╠░░░░░╙█▄               
-           ██.√√√√√√√√√▄#█▀╙`╙▀█▓▄▄▄@▓██████▄.√√√√√╠░░░░░░░╙█▓▄             
-         ┌████:√√√√√(▄█▀╙       └▀▀▀▀└   └▀▀██,√√╓╢░░░░░░░░░░▀██▄           
-         ██:√╙▀▓▄▄▓▓▀▀                      └██▄░░░░░░░░░░░░░░░██▄          
-         █▌√√╓██▀  ▄▄@╕                       ▀▀█▓▀▀▀▀▀▀███▄░░░░██▄         
-         ██▄▓█▀  ╙▀▀▀▀▀                 ,▄               ▀███░░░░██▄        
-          ███`                         ▓███,     .        ███░░░░║██        
-         ▓█▀     ,▄                     └▀██▄            ▄██▀░░░░░██`       
-        ██▀     ███¼        ,              ▀▀        ╓@██▀▀░░░░░░░██        
-       ██▀     ▐███       ╓█▀        ▄▄,          .  ▄╙▀█░░░░░░░░╟██        
-      ▐█▌       ▀▀└     .▓█└        #███          .  ╙█▓,▀█░░░░░░██▌        
-      ██              ▄▓█▀          ███▌          . .▄,▀█▄╙█░░░░███         
-     ╟█▌            #██▀            ╙▀▀           .  ▀█▓,█▄╙█░░███          
-     ██─            ███                             ▓▄,▀█▄█,█░███`          
-     ██             ╙███                         .   ▀█▄╙█Ö█████            
-     ██    ,#         ╙╙                         . ╙█▄ ▀ ╙████▀             
-     ██  ╒███▄▄                  ▐█▄            .   ╙▀  .@███┘              
-     ██▌  ██▄ └╙▀▀#╦▄▄▄▄▄▄▄▄▄▄▄▄#████▄         .         ╙███               
-     ▐██   ▀ ▀▓▄,     `└╙└└ .      ███▌        .          ╟██               
-      ██▌      ╙▀█▓▄▄▄,   .,▄▄▄▓▓▀▀╙██        .          .███               
-      └██▄        └▀▀▀███▀▀▀▀╙     ▀       ..          ▄███                
-       ╙██▄       Ñ▓▓▓▓µ                   ..    ▄▓▓▓▓███▀`                 
-        └██▄        `└└                  ..    ▄███▀└└                      
-          ▀██▄                          .   ▄▓██▀└                          
-            ▀█▓▄                     ..  ▄▓██▀╙                             
-              ╙▀█▄,                .╓▄▓██████                               
-                 ╙██▓▄         ...      ▄██▀                                
-                  ╙█████▓▓▄▄▄▄      .▄▄██▀                                 
-                    ▀█████▄▄▄▄▄▄▄▄▓████▀                                    
-                       ╙▀▀▀██████▀▀▀╙'
-
-sys_info="$KERNEL"
-echo -e "$greet\n$sys_info\n$USER is entering $HOSTNAME."
-IFS="$OLD_IFS"
-
-# set PATH so it includes user's private bin if it exists
-if [ -d "$HOME/bin" ] ; then
-    PATH="$HOME/bin:$PATH"
-fi
-
-if [[ "$HOSTNAME" == silo2060* ]]; then
-    . $HOME/.git_work
-else
-    . $HOME/.git_home
-fi
-
-export EDITOR=vim
-export PAGER=most
-
-# Set additional random paths
-export JAVA_HOME='/usr/local/java/jdk1.8.0_45'
-export GO_HOME='/usr/local/go'
-export GOPATH="$HOME/src/gopath"
-export PATH="$PATH:/sbin:/usr/sbin:/usr/local/sbin:$HOME/Android/Sdk/tools:$HOME/Android/Sdk/platform-tools:/opt/android-studio/bin:$JAVA_HOME/bin:$GO_HOME/bin:$GOPATH/bin:."

@@ -1,7 +1,6 @@
-#!/bin/bash
-#
 # Fred Thomsen
-# ~/.bash_colors: Pre-defined colors
+#
+# ~/.colors: Pre-defined colors
 
 #  SETUP CONSTANTS
 #  Bunch-o-predefined colors.  Makes reading code easier than escape sequences.
