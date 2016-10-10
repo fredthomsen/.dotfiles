@@ -2,6 +2,14 @@
 #
 # ~/.zshrc
 
+if [ -f "$HOME/.profile" ]; then
+    . "$HOME/.profile"
+fi
+
+if [ -f "$HOME/.zlogin" ]; then
+    . "$HOME/.zlogin"
+fi
+
 # Better tab completion
 autoload -Uz compinit && compinit
 

@@ -1,7 +1,6 @@
-#!/bin/bash
-#
 # Fred Thomsen
-# ~/.bash_functions: Personal bash functions
+#
+# ~/.functions: Personal bash functions
 
 # Where/What is this binary? Shows extended ls output
 function what() {

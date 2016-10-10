@@ -2,54 +2,42 @@
 #
 # Creates symlink to appropriate dot file from home directory
 
-all: bash git fonts themes icons desktop config
-bash: bash_aliases bash_functions bash_logout bash_colors bashrc profile 
-git: gitconfig gitignore
-config: xfce4 kupfer
+all: sh bash zsh git fonts desktop xfce4
 
-bash_aliases: 
-	ln -sf ~/.dotfiles/.bash_aliases ~/.bash_aliases
-
-bash_colors:
-	ln -sf ~/.dotfiles/.bash_colors ~/.bash_colors
-
-bash_functions: 
-	ln -sf ~/.dotfiles/.bash_functions ~/.bash_functions
-
-bash_logout: 
-	ln -sf ~/.dotfiles/.bash_logout ~/.bash_logout
-
-bashrc: 
-	ln -sf ~/.dotfiles/.bashrc ~/.bashrc
-
-profile:
+sh: 
+	ln -sf ~/.dotfiles/.aliases ~/.aliases
+	ln -sf ~/.dotfiles/.colors ~/.colors
+	ln -sf ~/.dotfiles/.functions ~/.functions
 	ln -sf ~/.dotfiles/.profile ~/.profile
 
-gitconfig:
+bash: 
+	ln -sf ~/.dotfiles/.login ~/.bash_login
+	ln -sf ~/.dotfiles/.bash_profile ~/.bash_profile
+	ln -sf ~/.dotfiles/.bashrc ~/.bashrc
+	ln -sf ~/.dotfiles/.logout ~/.bash_logout
+
+zsh:	
+	ln -sf ~/.dotfiles/.login ~/.zlogin
+	ln -sf ~/.dotfiles/.zshrc ~/.zshrc
+	ln -sf ~/.dotfiles/.logout ~/.zlogout
+
+git:
 	ln -sf ~/.dotfiles/.gitconfig ~/.gitconfig
 	ln -sf ~/.dotfiles/.git_home ~/.git_home
 	ln -sf ~/.dotfiles/.git_work ~/.git_work
-
-themes:
-	ln -sf ~/.dotfiles/.themes ~/.themes
+	ln -sf ~/.dotfiles/.gitignore ~/.gitignore
 
 fonts:
 	ln -sf ~/.dotfiles/.fonts ~/.fonts
 
-icons:
-	ln -sf ~/.dotfiles/.icons ~/.icons
-
 desktop:
+	ln -sf ~/.dotfiles/.themes ~/.themes
+	ln -sf ~/.dotfiles/.icons ~/.icons
 	ln -sf ~/.dotfiles/.wallpaper ~/.wallpaper
 	ln -sf ~/.dotfiles/.xscreensaver ~/.xscreensaver
 	ln -sf ~/.dotfiles/.face ~/.face
-
-gitignore:
-	ln -sf ~/.dotfiles/.gitignore ~/.gitignore
+	ln -sf ~/.dotfiles/.config/autostart ~/.config/autostart
+	ln -sf ~/.dotfiles/.config/kupfer ~/.config/kupfer
 
 xfce4:
 	ln -sf ~/.dotfiles/.config/xfce4 ~/.config/xfce4
-	ln -sf ~/.dotfiles/.config/autostart ~/.config/autostart
-
-kupfer:
-	ln -sf ~/.dotfiles/.config/kupfer ~/.config/kupfer
