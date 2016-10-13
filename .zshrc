@@ -40,14 +40,18 @@ setopt auto_cd
 
 # History options
 HISTFILE=~/.zsh_history
-HISTSIZE=1000
-SAVEHIST=1000
+HISTSIZE=10000
+SAVEHIST=10000
 setopt SHARE_HISTORY # share history between sessions
 setopt EXTENDED_HISTORY # add timestamps to history
 setopt APPEND_HISTORY # adds history
 setopt INC_APPEND_HISTORY SHARE_HISTORY  # adds history incrementally and share it across sessions
 setopt HIST_IGNORE_ALL_DUPS  # don't record dupes in history
 setopt HIST_REDUCE_BLANKS
+
+# reverse search
+bindkey -v
+bindkey '^R' history-incremental-search-backward
 
 # Print elapsed command time when more than X seconds
 REPORTTIME=10
