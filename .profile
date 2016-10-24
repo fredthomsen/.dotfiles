@@ -36,6 +36,9 @@ GIT_PS1_DESCRIBE_STYLE=describe
 # set up git prompt for macos
 if [ -f /Applications/Xcode.app/Contents/Developer/usr/share/git-core/git-prompt.sh ]; then
     . /Applications/Xcode.app/Contents/Developer/usr/share/git-core/git-prompt.sh
+# or linux
+elif [ -f /usr/lib/git-core/git-sh-prompt ]; then
+    . /usr/lib/git-core/git-sh-prompt
 fi
 
 # I use ctrl-s in vim, so this is needed
