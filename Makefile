@@ -20,6 +20,7 @@ zsh:
 	ln -sf ~/.dotfiles/.login ~/.zlogin
 	ln -sf ~/.dotfiles/.zshrc ~/.zshrc
 	ln -sf ~/.dotfiles/.logout ~/.zlogout
+	chsh -s /usr/bin/zsh
 
 git:
 	ln -sf ~/.dotfiles/.gitconfig ~/.gitconfig
