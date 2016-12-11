@@ -56,6 +56,9 @@ bindkey '^R' history-incremental-search-backward
 # Print elapsed command time when more than X seconds
 REPORTTIME=10
 
+# Hostname not available in zsh
+HOSTNAME=$HOST
+
 # set up git prompt for macos
 if [ -f /Applications/Xcode.app/Contents/Developer/usr/share/git-core/git-prompt.sh ]; then
     . /Applications/Xcode.app/Contents/Developer/usr/share/git-core/git-prompt.sh
@@ -63,5 +66,11 @@ fi
 
 setopt prompt_subst
 # Sane prompt username, hostname, current dir...
-PROMPT='%{$fg_bold[cyan]%}%n%{$fg_bold[blue]%}@%{$fg[cyan]%}%m%{$fg_bold[blue]%}:%~%{$fg_bold[yellow]%}$(__git_ps1)%{$fg_bold[green]%}$ %{$reset_color%}'
+if [ "$HOST" = 'odin' ]; then
+    HOST_COLOR='red'
+else
+    HOST_COLOR='cyan'
+fi
+
+PROMPT='%{$fg_bold[cyan]%}%n%{$fg_bold[blue]%}@%{$fg[$HOST_COLOR]%}%m%{$fg_bold[blue]%}:%~%{$fg_bold[yellow]%}$(__git_ps1)%{$fg_bold[green]%}$ %{$reset_color%}'
 RPROMPT='[%t]'

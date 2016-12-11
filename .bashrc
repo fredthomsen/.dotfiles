@@ -54,6 +54,9 @@ if [ -n "$force_color_prompt" ]; then
     fi
 fi
 
+# Host not available in bash
+HOST=$HOSTNAME
+
 # Change host colors depending on what host is being used
 if [ "$HOSTNAME" = odin ]; then
     HOST_COLOR=$P_BRed
