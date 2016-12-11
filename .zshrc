@@ -61,13 +61,6 @@ if [ -f /Applications/Xcode.app/Contents/Developer/usr/share/git-core/git-prompt
     . /Applications/Xcode.app/Contents/Developer/usr/share/git-core/git-prompt.sh
 fi
 
-# Git variables for prompt
-GIT_PS1_SHOWDIRTYSTATE=true
-GIT_PS1_SHOWCOLORHINTS=true
-GIT_PS1_SHOWSTASHSTATE=true
-GIT_PS1_SHOWUPSTREAM='git verbose'
-GIT_PS1_DESCRIBE_STYLE=describe
-
 setopt prompt_subst
 # Sane prompt username, hostname, current dir...
 PROMPT='%{$fg_bold[cyan]%}%n%{$fg_bold[blue]%}@%{$fg[cyan]%}%m%{$fg_bold[blue]%}:%~%{$fg_bold[yellow]%}$(__git_ps1)%{$fg_bold[green]%}$ %{$reset_color%}'
