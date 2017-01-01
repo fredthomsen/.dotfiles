@@ -65,6 +65,10 @@ alias gt='git tag'
 alias gps='git ps'
 alias gpl='git pl'
 
+# python virtualenv
+alias venv='virtualenv venv && source venv/bin/activate'
+alias unvenv='deactivate'
+
 # webapps
 alias gmail='/opt/google/chrome/google-chrome --profile-directory=Default --app-id=pjkljhegncpnkpknbcohdijeoejaedia'
 alias tweet='/opt/google/chrome/google-chrome --profile-directory=Default --app-id=hbdpomandigafcibbmofojjchbcdagbl'
