@@ -64,6 +64,13 @@ if [ -f /Applications/Xcode.app/Contents/Developer/usr/share/git-core/git-prompt
     . /Applications/Xcode.app/Contents/Developer/usr/share/git-core/git-prompt.sh
 fi
 
+# set terminal window titles
+case $TERM in
+    xterm*)
+        precmd () {print -Pn "\e]0;%n@%m: %~\a"}
+        ;;
+esac
+
 setopt prompt_subst
 # Sane prompt username, hostname, current dir...
 if [ "$HOST" = 'odin' ]; then
