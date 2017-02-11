@@ -1,9 +1,0 @@
-[Desktop Entry]
-Version=1.0
-Terminal=false
-Type=Application
-Name=Confluence
-Exec=/opt/google/chrome/google-chrome --profile-directory=Default --app-id=lpmcmbdlonmekmbcmodeicopionaoang
-Icon=chrome-lpmcmbdlonmekmbcmodeicopionaoang-Default
-StartupWMClass=crx_lpmcmbdlonmekmbcmodeicopionaoang
-X-XFCE-Source=file:///home/fred/.local/share/applications/chrome-lpmcmbdlonmekmbcmodeicopionaoang-Default.desktop

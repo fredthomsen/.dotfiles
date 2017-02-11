@@ -3,7 +3,10 @@ Version=1.0
 Terminal=false
 Type=Application
 Name=Google Calendar
-Exec=/opt/google/chrome/google-chrome --profile-directory=Default --app-id=ejjicmeblgpmajnghnpcppodonldlgfn
+Exec=/opt/google/chrome/google-chrome --app https://calendar.google.com
 Icon=chrome-ejjicmeblgpmajnghnpcppodonldlgfn-Default
 StartupWMClass=crx_ejjicmeblgpmajnghnpcppodonldlgfn
 X-XFCE-Source=file:///home/fred/.local/share/applications/chrome-ejjicmeblgpmajnghnpcppodonldlgfn-Default.desktop
+Comment=
+Path=
+StartupNotify=false

@@ -1,9 +1,0 @@
-[Desktop Entry]
-Version=1.0
-Terminal=false
-Type=Application
-Name=Hangouts call
-Exec=/opt/google/chrome/google-chrome --profile-directory=Default --app-id=kbpgddbgniojgndnhlkjbkpknjhppkbk
-Icon=chrome-kbpgddbgniojgndnhlkjbkpknjhppkbk-Default
-StartupWMClass=crx_kbpgddbgniojgndnhlkjbkpknjhppkbk
-X-XFCE-Source=file:///home/fred/.local/share/applications/chrome-kbpgddbgniojgndnhlkjbkpknjhppkbk-Default.desktop

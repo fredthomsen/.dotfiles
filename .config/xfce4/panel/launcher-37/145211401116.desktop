@@ -1,9 +1,0 @@
-[Desktop Entry]
-Version=1.0
-Terminal=false
-Type=Application
-Name=Stack Overflow
-Exec=/opt/google/chrome/google-chrome --profile-directory=Default --app-id=fbcbmlniebfgkkkplpflplfgijmklngl
-Icon=chrome-fbcbmlniebfgkkkplpflplfgijmklngl-Default
-StartupWMClass=crx_fbcbmlniebfgkkkplpflplfgijmklngl
-X-XFCE-Source=file:///home/fred/.local/share/applications/chrome-fbcbmlniebfgkkkplpflplfgijmklngl-Default.desktop

@@ -1,9 +1,0 @@
-[Desktop Entry]
-Version=1.0
-Terminal=false
-Type=Application
-Name=LinkedIn
-Exec=/opt/google/chrome/google-chrome --profile-directory=Default --app-id=gekhpckafbobgohmafahkanpbhfedjpo
-Icon=chrome-gekhpckafbobgohmafahkanpbhfedjpo-Default
-StartupWMClass=crx_gekhpckafbobgohmafahkanpbhfedjpo
-X-XFCE-Source=file:///home/fred/.local/share/applications/chrome-gekhpckafbobgohmafahkanpbhfedjpo-Default.desktop

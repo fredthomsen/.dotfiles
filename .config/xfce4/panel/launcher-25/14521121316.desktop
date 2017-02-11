@@ -1,9 +1,0 @@
-[Desktop Entry]
-Version=1.0
-Terminal=false
-Type=Application
-Name=Google Play Music
-Exec=/opt/google/chrome/google-chrome --profile-directory=Default --app-id=icppfcnhkcmnfdhfhphakoifcfokfdhg
-Icon=chrome-icppfcnhkcmnfdhfhphakoifcfokfdhg-Default
-StartupWMClass=crx_icppfcnhkcmnfdhfhphakoifcfokfdhg
-X-XFCE-Source=file:///home/fred/.local/share/applications/chrome-icppfcnhkcmnfdhfhphakoifcfokfdhg-Default.desktop

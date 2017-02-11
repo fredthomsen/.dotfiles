@@ -3,7 +3,10 @@ Version=1.0
 Terminal=false
 Type=Application
 Name=GitHub
-Exec=/opt/google/chrome/google-chrome --profile-directory=Default --app-id=mjoklplbddabcmpepnokjaffbmgbkkgg
+Exec=/opt/google/chrome/google-chrome --app https://www.github.com
 Icon=chrome-mjoklplbddabcmpepnokjaffbmgbkkgg-Default
 StartupWMClass=crx_mjoklplbddabcmpepnokjaffbmgbkkgg
 X-XFCE-Source=file:///home/fred/.local/share/applications/chrome-mjoklplbddabcmpepnokjaffbmgbkkgg-Default.desktop
+Comment=
+Path=
+StartupNotify=false

@@ -1,9 +1,0 @@
-[Desktop Entry]
-Version=1.0
-Terminal=false
-Type=Application
-Name=Google Sheets
-Exec=/opt/google/chrome/google-chrome --profile-directory=Default --app-id=felcaaldnbdncclmgdcncolpebgiejap
-Icon=chrome-felcaaldnbdncclmgdcncolpebgiejap-Default
-StartupWMClass=crx_felcaaldnbdncclmgdcncolpebgiejap
-X-XFCE-Source=file:///home/fred/.local/share/applications/chrome-felcaaldnbdncclmgdcncolpebgiejap-Default.desktop
