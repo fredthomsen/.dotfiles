@@ -67,6 +67,7 @@ alias gpl='git pl'
 
 # python virtualenv
 alias venv='virtualenv venv && source venv/bin/activate'
+alias venv3='virtualenv -p python3 venv3 && source venv3/bin/activate'
 alias unvenv='deactivate'
 
 # webapps
