@@ -64,6 +64,7 @@ alias gshf='git shf'
 alias gt='git tag'
 alias gps='git ps'
 alias gpl='git pl'
+alias em7r='g describe --match v$(cat ~/em7/SILO_VERSION)'
 
 # python virtualenv
 alias venv='virtualenv venv && source venv/bin/activate'
