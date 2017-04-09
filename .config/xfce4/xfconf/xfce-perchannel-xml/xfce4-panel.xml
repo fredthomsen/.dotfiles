@@ -10,6 +10,8 @@
       <property name="position-locked" type="bool" value="true"/>
       <property name="plugin-ids" type="array">
         <value type="int" value="13"/>
+        <value type="int" value="33"/>
+        <value type="int" value="1"/>
         <value type="int" value="15"/>
         <value type="int" value="30"/>
         <value type="int" value="16"/>
@@ -34,11 +36,11 @@
         <value type="int" value="31"/>
         <value type="int" value="12"/>
         <value type="int" value="2"/>
+        <value type="int" value="27"/>
         <value type="int" value="4"/>
         <value type="int" value="11"/>
         <value type="int" value="10"/>
         <value type="int" value="3"/>
-        <value type="int" value="1"/>
       </property>
       <property name="enter-opacity" type="uint" value="100"/>
       <property name="leave-opacity" type="uint" value="100"/>
@@ -129,7 +131,22 @@
         <value type="string" value="139938980710.desktop"/>
       </property>
     </property>
-    <property name="plugin-1" type="string" value="actions"/>
+    <property name="plugin-1" type="string" value="actions">
+      <property name="appearance" type="uint" value="0"/>
+      <property name="items" type="array">
+        <value type="string" value="+lock-screen"/>
+        <value type="string" value="+switch-user"/>
+        <value type="string" value="+separator"/>
+        <value type="string" value="+suspend"/>
+        <value type="string" value="-hibernate"/>
+        <value type="string" value="-separator"/>
+        <value type="string" value="+shutdown"/>
+        <value type="string" value="+restart"/>
+        <value type="string" value="+separator"/>
+        <value type="string" value="+logout"/>
+        <value type="string" value="-logout-dialog"/>
+      </property>
+    </property>
     <property name="plugin-2" type="string" value="directorymenu">
       <property name="base-directory" type="string" value="/home/fred"/>
     </property>
@@ -214,6 +231,8 @@
         <value type="string" value="14580569801.desktop"/>
       </property>
     </property>
+    <property name="plugin-27" type="string" value="places"/>
+    <property name="plugin-33" type="string" value="windowmenu"/>
   </property>
   <property name="configver" type="int" value="2"/>
 </channel>
