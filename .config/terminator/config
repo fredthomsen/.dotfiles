@@ -19,5 +19,7 @@
     background_image = None
     background_type = transparent
     cursor_color = "#efe3e3"
+    font = DejaVu Sans Mono 9
     scrollback_lines = 100000
     split_to_group = True
+    use_system_font = False
