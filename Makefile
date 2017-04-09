@@ -39,6 +39,7 @@ desktop:
 	ln -sf ~/.dotfiles/.face ~/.face
 	ln -sf ~/.dotfiles/.config/autostart ~/.config/autostart
 	ln -sf ~/.dotfiles/.config/kupfer ~/.config/kupfer
+	ln -sf ~/.dotfiles/.config/menus ~/.config/menus
 
 xfce4:
 	ln -sf ~/.dotfiles/.config/xfce4 ~/.config/xfce4
