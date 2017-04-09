@@ -1,5 +1,5 @@
 favorites=google-chrome.desktop,exo-terminal-emulator.desktop,gvim.desktop,vlc.desktop,chrome-fpniocchabmgenibceglhnfeimmdhdfm-Default.desktop,meld.desktop,exo-file-manager.desktop,ubuntu-software-center.desktop,shutter.desktop
-recent=docky.desktop,PlayOnLinux.desktop,ghb.desktop,ubuntu-software-center.desktop,winetricks.desktop,exo-terminal-emulator.desktop,google-chrome.desktop,gnome-calculator.desktop,exo-preferred-applications.desktop
+recent=ubuntu-software-center.desktop,xfce-session-settings.desktop,PlayOnLinux.desktop,ghb.desktop,winetricks.desktop,exo-terminal-emulator.desktop,google-chrome.desktop,gnome-calculator.desktop,exo-preferred-applications.desktop
 button-title=Applications Menu
 button-icon=ubuntu_badge-symbolic
 button-single-row=false

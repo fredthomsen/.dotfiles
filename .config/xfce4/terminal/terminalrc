@@ -26,4 +26,6 @@ TabActivityColor=#262656568080
 BackgroundDarkness=0.900000
 ScrollingLines=100000
 DropdownHeight=80
+BackgroundMode=TERMINAL_BACKGROUND_TRANSPARENT
+ScrollingBar=TERMINAL_SCROLLBAR_NONE
 
