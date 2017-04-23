@@ -39,9 +39,9 @@
         
 [init]
     templatedir = ~/.git_template
-[branch]
-    autosetuprebase = always
 [push]
     default = simple
 [fetch]
 	prune = true
+[pull]
+	ff = only
