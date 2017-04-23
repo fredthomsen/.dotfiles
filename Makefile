@@ -2,7 +2,7 @@
 #
 # Creates symlink to appropriate dot file from home directory
 
-all: sh bash zsh git fonts desktop xfce4 terminal
+all: sh bash zsh git fonts desktop xfce4 terminal vim
 
 sh: 
 	ln -sf ~/.dotfiles/.aliases ~/.aliases
@@ -47,3 +47,7 @@ xfce4:
 terminal:
 	ln -sf ~/.dotfiles/.config/terminator/ ~/.config/terminator
 	ln -sf ~/.dotfiles/.iterm2 ~/.iterm2
+
+vim:
+	ln -sf ~/.dotfiles/.vim/ ~/.vim
+	ln -sf ~/.dotfiles/.vim/.vimrc ~/.vimrc
