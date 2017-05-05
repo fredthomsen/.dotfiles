@@ -58,6 +58,7 @@ fi
 export TERM=xterm-256color
 export EDITOR=vim
 export PAGER=most
+export GPG_TTY=$(tty)
 
 # Set additional random paths
 export JAVA_HOME='/usr/local/java/jdk1.8.0_45'
