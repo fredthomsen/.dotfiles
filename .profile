@@ -39,6 +39,8 @@ if [ -f /Applications/Xcode.app/Contents/Developer/usr/share/git-core/git-prompt
 # or linux
 elif [ -f /usr/lib/git-core/git-sh-prompt ]; then
     . /usr/lib/git-core/git-sh-prompt
+elif [ -f /usr/share/git/completion/git-prompt.sh ]; then
+    . /usr/share/git/completion/git-prompt.sh
 fi
 
 # I use ctrl-s in vim, so this is needed
