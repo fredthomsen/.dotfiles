@@ -38,6 +38,13 @@ setopt interactivecomments
 # Only type ..
 setopt auto_cd
 
+# Alert on fail
+setopt printexitvalue
+
+# middle of the word complete move to end
+setopt complete_in_word
+setopt always_to_end
+
 # History options
 HISTFILE=~/.zsh_history
 HISTSIZE=10000
