@@ -38,9 +38,6 @@ setopt interactivecomments
 # Only type ..
 setopt auto_cd
 
-# Alert on fail
-setopt printexitvalue
-
 # middle of the word complete move to end
 setopt complete_in_word
 setopt always_to_end
@@ -87,4 +84,4 @@ else
 fi
 
 PROMPT='%{$fg_bold[cyan]%}%n%{$fg_bold[blue]%}@%{$fg[$HOST_COLOR]%}%m%{$fg_bold[blue]%}:%~%{$fg_bold[yellow]%}$(__git_ps1)%{$fg_bold[green]%}$ %{$reset_color%}'
-RPROMPT='[%t]'
+RPROMPT='[$? - %t]'
