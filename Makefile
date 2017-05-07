@@ -32,6 +32,9 @@ fonts:
 	ln -sf ~/.dotfiles/.fonts ~/.fonts
 
 desktop:
+	if [ ! -e ~/.config ]; then
+		mkdir ~/.config
+	fi
 	ln -sf ~/.dotfiles/.themes ~/.themes
 	ln -sf ~/.dotfiles/.icons ~/.icons
 	ln -sf ~/.dotfiles/.wallpaper ~/.wallpaper
