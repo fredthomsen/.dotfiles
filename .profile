@@ -66,4 +66,5 @@ export GPG_TTY=$(tty)
 export JAVA_HOME='/usr/local/java/jdk1.8.0_45'
 export GO_HOME='/usr/local/go'
 export GOPATH="$HOME/src/gopath"
+export GOROOT="/usr/local/lib/go"
 export PATH="$PATH:/sbin:/usr/sbin:/usr/local/sbin:$HOME/Android/Sdk/tools:$HOME/Android/Sdk/platform-tools:/opt/android-studio/bin:$JAVA_HOME/bin:$GO_HOME/bin:$GOPATH/bin:."
