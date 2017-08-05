@@ -14,9 +14,11 @@
         <value type="int" value="1"/>
         <value type="int" value="15"/>
         <value type="int" value="30"/>
-        <value type="int" value="16"/>
         <value type="int" value="18"/>
         <value type="int" value="17"/>
+        <value type="int" value="16"/>
+        <value type="int" value="8"/>
+        <value type="int" value="32"/>
         <value type="int" value="19"/>
         <value type="int" value="20"/>
         <value type="int" value="21"/>
@@ -29,7 +31,7 @@
         <value type="int" value="5"/>
         <value type="int" value="29"/>
         <value type="int" value="36"/>
-        <value type="int" value="22"/>
+        <value type="int" value="34"/>
         <value type="int" value="23"/>
         <value type="int" value="7"/>
         <value type="int" value="6"/>
@@ -77,6 +79,7 @@
         <value type="string" value="docky"/>
         <value type="string" value="skype"/>
         <value type="string" value="nylas"/>
+        <value type="string" value="chrome"/>
         <value type="string" value="drop-down terminal"/>
         <value type="string" value="chromium-browser"/>
         <value type="string" value="xfce terminal"/>
@@ -86,6 +89,7 @@
         <value type="string" value="dropbox"/>
         <value type="string" value="xfce4-power-manager"/>
         <value type="string" value="electrum"/>
+        <value type="string" value="hexchat"/>
         <value type="string" value="ghb"/>
         <value type="string" value="google-musicmanager"/>
         <value type="string" value="slack"/>
@@ -116,11 +120,6 @@
     <property name="plugin-19" type="string" value="launcher">
       <property name="items" type="array">
         <value type="string" value="13993878064.desktop"/>
-      </property>
-    </property>
-    <property name="plugin-22" type="string" value="launcher">
-      <property name="items" type="array">
-        <value type="string" value="13993880317.desktop"/>
       </property>
     </property>
     <property name="plugin-23" type="string" value="launcher">
@@ -238,6 +237,21 @@
     <property name="plugin-27" type="string" value="places"/>
     <property name="plugin-33" type="string" value="windowmenu">
       <property name="style" type="uint" value="0"/>
+    </property>
+    <property name="plugin-8" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="15019545891.desktop"/>
+      </property>
+    </property>
+    <property name="plugin-32" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="15019545982.desktop"/>
+      </property>
+    </property>
+    <property name="plugin-34" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="15019553623.desktop"/>
+      </property>
     </property>
   </property>
   <property name="configver" type="int" value="2"/>
