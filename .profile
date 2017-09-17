@@ -43,9 +43,6 @@ elif [ -f /usr/share/git/completion/git-prompt.sh ]; then
     . /usr/share/git/completion/git-prompt.sh
 fi
 
-# I use ctrl-s in vim, so this is needed
-stty -ixon
-
 # set PATH so it includes user's private bin if it exists
 if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
@@ -58,7 +55,7 @@ else
 fi
 
 export TERM=xterm-256color
-export EDITOR=vim
+export EDITOR=emacs
 export PAGER=most
 export GPG_TTY=$(tty)
 

@@ -89,11 +89,12 @@
         <value type="string" value="dropbox"/>
         <value type="string" value="xfce4-power-manager"/>
         <value type="string" value="electrum"/>
-        <value type="string" value="hexchat"/>
         <value type="string" value="ghb"/>
         <value type="string" value="google-musicmanager"/>
-        <value type="string" value="slack"/>
+        <value type="string" value="hexchat"/>
         <value type="string" value="pybitmessage"/>
+        <value type="string" value="slack"/>
+        <value type="string" value="pidgin"/>
         <value type="string" value="network"/>
       </property>
     </property>
@@ -109,7 +110,7 @@
     </property>
     <property name="plugin-17" type="string" value="launcher">
       <property name="items" type="array">
-        <value type="string" value="13993875182.desktop"/>
+        <value type="string" value="15056634591.desktop"/>
       </property>
     </property>
     <property name="plugin-18" type="string" value="launcher">
