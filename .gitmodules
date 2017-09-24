@@ -4,3 +4,6 @@
 [submodule ".vim"]
 	path = .vim
 	url = https://github.com/fredthomsen/.vim.git
+[submodule ".emacs.d"]
+	path = .emacs.d
+	url = git@github.com:fredthomsen/.emacs.d.git

@@ -2,7 +2,7 @@
 #
 # Creates symlink to appropriate dot file from home directory
 
-all: sh bash zsh git fonts desktop xfce4 terminal vim
+all: sh bash zsh git fonts desktop xfce4 terminal vim emacs
 
 sh: 
 	ln -sf ~/.dotfiles/.aliases ~/.aliases
@@ -32,9 +32,6 @@ fonts:
 	ln -sf ~/.dotfiles/.fonts ~/.fonts
 
 desktop:
-	if [ ! -e ~/.config ]; then
-		mkdir ~/.config
-	fi
 	ln -sf ~/.dotfiles/.themes ~/.themes
 	ln -sf ~/.dotfiles/.icons ~/.icons
 	ln -sf ~/.dotfiles/.wallpaper ~/.wallpaper
@@ -54,3 +51,6 @@ terminal:
 vim:
 	ln -sf ~/.dotfiles/.vim/ ~/.vim
 	ln -sf ~/.dotfiles/.vim/.vimrc ~/.vimrc
+
+emacs:
+	ln -sf ~/.dotfiles/.emacs.d ~/.emacs.d
