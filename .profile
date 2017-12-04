@@ -34,8 +34,8 @@ GIT_PS1_SHOWUPSTREAM='git verbose'
 GIT_PS1_DESCRIBE_STYLE=describe
 
 # set up git prompt for macos
-if [ -f /Applications/Xcode.app/Contents/Developer/usr/share/git-core/git-prompt.sh ]; then
-    . /Applications/Xcode.app/Contents/Developer/usr/share/git-core/git-prompt.sh
+if [ -f $(brew --prefix)/etc/bash_completion.d/git-prompt.sh ]; then
+    . $(brew --prefix)/etc/bash_completion.d/git-prompt.sh
 # or linux
 elif [ -f /usr/lib/git-core/git-sh-prompt ]; then
     . /usr/lib/git-core/git-sh-prompt
