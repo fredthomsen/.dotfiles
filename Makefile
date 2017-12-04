@@ -2,25 +2,32 @@
 #
 # Creates symlink to appropriate dot file from home directory
 
-all: sh bash zsh git fonts desktop xfce4 terminal vim emacs
+all: sh bash zsh git fonts vim emacs terminal
 
-sh: 
+sh:
 	ln -sf ~/.dotfiles/.aliases ~/.aliases
 	ln -sf ~/.dotfiles/.colors ~/.colors
 	ln -sf ~/.dotfiles/.functions ~/.functions
 	ln -sf ~/.dotfiles/.profile ~/.profile
 
-bash: 
+bash:
 	ln -sf ~/.dotfiles/.login ~/.bash_login
 	ln -sf ~/.dotfiles/.bash_profile ~/.bash_profile
 	ln -sf ~/.dotfiles/.bashrc ~/.bashrc
 	ln -sf ~/.dotfiles/.logout ~/.bash_logout
 
-zsh:	
+zsh:
 	ln -sf ~/.dotfiles/.login ~/.zlogin
 	ln -sf ~/.dotfiles/.zshrc ~/.zshrc
 	ln -sf ~/.dotfiles/.logout ~/.zlogout
 	chsh -s /usr/bin/zsh
+
+vim:
+	ln -sf ~/.dotfiles/.vim/ ~/.vim
+	ln -sf ~/.dotfiles/.vim/.vimrc ~/.vimrc
+
+emacs:
+	ln -sf ~/.dotfiles/.emacs.d ~/.emacs.d
 
 git:
 	ln -sf ~/.dotfiles/.gitconfig ~/.gitconfig
@@ -31,7 +38,11 @@ git:
 fonts:
 	ln -sf ~/.dotfiles/.fonts ~/.fonts
 
-desktop:
+terminal:
+	ln -sf ~/.dotfiles/.iterm2 ~/.iterm2
+	ln -sf ~/.dotfiles/.config/terminator/ ~/.config/terminator
+
+linux_desktop:
 	ln -sf ~/.dotfiles/.themes ~/.themes
 	ln -sf ~/.dotfiles/.icons ~/.icons
 	ln -sf ~/.dotfiles/.wallpaper ~/.wallpaper
@@ -40,17 +51,4 @@ desktop:
 	ln -sf ~/.dotfiles/.config/autostart ~/.config/autostart
 	ln -sf ~/.dotfiles/.config/kupfer ~/.config/kupfer
 	ln -sf ~/.dotfiles/.config/menus ~/.config/menus
-
-xfce4:
 	ln -sf ~/.dotfiles/.config/xfce4 ~/.config/xfce4
-
-terminal:
-	ln -sf ~/.dotfiles/.config/terminator/ ~/.config/terminator
-	ln -sf ~/.dotfiles/.iterm2 ~/.iterm2
-
-vim:
-	ln -sf ~/.dotfiles/.vim/ ~/.vim
-	ln -sf ~/.dotfiles/.vim/.vimrc ~/.vimrc
-
-emacs:
-	ln -sf ~/.dotfiles/.emacs.d ~/.emacs.d
