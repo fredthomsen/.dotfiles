@@ -12,6 +12,7 @@
         <value type="int" value="13"/>
         <value type="int" value="33"/>
         <value type="int" value="1"/>
+        <value type="int" value="22"/>
         <value type="int" value="15"/>
         <value type="int" value="30"/>
         <value type="int" value="18"/>
@@ -20,23 +21,10 @@
         <value type="int" value="8"/>
         <value type="int" value="32"/>
         <value type="int" value="19"/>
-        <value type="int" value="20"/>
-        <value type="int" value="21"/>
-        <value type="int" value="9"/>
-        <value type="int" value="14"/>
-        <value type="int" value="24"/>
-        <value type="int" value="25"/>
-        <value type="int" value="26"/>
-        <value type="int" value="28"/>
-        <value type="int" value="5"/>
-        <value type="int" value="29"/>
-        <value type="int" value="36"/>
         <value type="int" value="34"/>
         <value type="int" value="23"/>
         <value type="int" value="7"/>
         <value type="int" value="6"/>
-        <value type="int" value="31"/>
-        <value type="int" value="12"/>
         <value type="int" value="2"/>
         <value type="int" value="27"/>
         <value type="int" value="4"/>
@@ -46,11 +34,11 @@
       </property>
       <property name="enter-opacity" type="uint" value="100"/>
       <property name="leave-opacity" type="uint" value="100"/>
-      <property name="background-alpha" type="uint" value="0"/>
+      <property name="background-alpha" type="uint" value="50"/>
       <property name="span-monitors" type="bool" value="false"/>
       <property name="background-style" type="uint" value="1"/>
       <property name="output-name" type="string" value=""/>
-      <property name="autohide-behavior" type="uint" value="0"/>
+      <property name="autohide-behavior" type="uint" value="2"/>
       <property name="mode" type="uint" value="0"/>
       <property name="disable-struts" type="bool" value="false"/>
     </property>
@@ -130,11 +118,6 @@
       <property name="show-label" type="bool" value="false"/>
     </property>
     <property name="plugin-30" type="string" value="showdesktop"/>
-    <property name="plugin-31" type="string" value="launcher">
-      <property name="items" type="array">
-        <value type="string" value="139938980710.desktop"/>
-      </property>
-    </property>
     <property name="plugin-1" type="string" value="actions">
       <property name="appearance" type="uint" value="0"/>
       <property name="items" type="array">
@@ -158,11 +141,6 @@
       <property name="expand" type="bool" value="true"/>
       <property name="style" type="uint" value="1"/>
     </property>
-    <property name="plugin-5" type="string" value="launcher">
-      <property name="items" type="array">
-        <value type="string" value="14155830002.desktop"/>
-      </property>
-    </property>
     <property name="plugin-6" type="string" value="launcher">
       <property name="items" type="array">
         <value type="string" value="14245743611.desktop"/>
@@ -173,67 +151,12 @@
         <value type="string" value="14252560401.desktop"/>
       </property>
     </property>
-    <property name="plugin-9" type="string" value="launcher">
-      <property name="items" type="array">
-        <value type="string" value="14520914481.desktop"/>
-      </property>
-    </property>
-    <property name="plugin-14" type="string" value="launcher">
-      <property name="items" type="array">
-        <value type="string" value="14520915132.desktop"/>
-      </property>
-    </property>
-    <property name="plugin-20" type="string" value="launcher">
-      <property name="items" type="array">
-        <value type="string" value="14520915293.desktop"/>
-      </property>
-    </property>
-    <property name="plugin-21" type="string" value="launcher">
-      <property name="items" type="array">
-        <value type="string" value="14521114374.desktop"/>
-      </property>
-    </property>
-    <property name="plugin-24" type="string" value="launcher">
-      <property name="items" type="array">
-        <value type="string" value="14521119155.desktop"/>
-      </property>
-    </property>
-    <property name="plugin-25" type="string" value="launcher">
-      <property name="items" type="array">
-        <value type="string" value="14868564321.desktop"/>
-      </property>
-    </property>
-    <property name="plugin-26" type="string" value="launcher">
-      <property name="items" type="array">
-        <value type="string" value="14521121597.desktop"/>
-      </property>
-    </property>
-    <property name="plugin-28" type="string" value="launcher">
-      <property name="items" type="array">
-        <value type="string" value="14521121939.desktop"/>
-      </property>
-    </property>
-    <property name="plugin-29" type="string" value="launcher">
-      <property name="items" type="array">
-        <value type="string" value="145211250810.desktop"/>
-      </property>
-    </property>
-    <property name="plugin-36" type="string" value="launcher">
-      <property name="items" type="array">
-        <value type="string" value="145211322715.desktop"/>
-      </property>
-    </property>
     <property name="plugin-3" type="string" value="clock">
       <property name="mode" type="uint" value="2"/>
       <property name="true-binary" type="bool" value="true"/>
       <property name="show-seconds" type="bool" value="true"/>
       <property name="show-grid" type="bool" value="true"/>
       <property name="digital-format" type="string" value="%m/%d/%Y %H:%M"/>
-    </property>
-    <property name="plugin-12" type="string" value="launcher">
-      <property name="items" type="array">
-        <value type="string" value="14580569801.desktop"/>
-      </property>
     </property>
     <property name="plugin-27" type="string" value="places"/>
     <property name="plugin-33" type="string" value="windowmenu">
@@ -253,6 +176,10 @@
       <property name="items" type="array">
         <value type="string" value="15019553623.desktop"/>
       </property>
+    </property>
+    <property name="plugin-22" type="string" value="pager">
+      <property name="rows" type="uint" value="2"/>
+      <property name="miniature-view" type="bool" value="true"/>
     </property>
   </property>
   <property name="configver" type="int" value="2"/>

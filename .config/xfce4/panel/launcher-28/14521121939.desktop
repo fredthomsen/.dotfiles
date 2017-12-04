@@ -1,9 +1,0 @@
-[Desktop Entry]
-Version=1.0
-Terminal=false
-Type=Application
-Name=YouTube
-Exec=/opt/google/chrome/google-chrome --profile-directory=Default --app-id=blpcfgokakmgnkcojhhkbfbldkacnbeo
-Icon=chrome-blpcfgokakmgnkcojhhkbfbldkacnbeo-Default
-StartupWMClass=crx_blpcfgokakmgnkcojhhkbfbldkacnbeo
-X-XFCE-Source=file:///home/fred/.local/share/applications/chrome-blpcfgokakmgnkcojhhkbfbldkacnbeo-Default.desktop
