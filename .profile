@@ -33,14 +33,14 @@ GIT_PS1_SHOWSTASHSTATE=true
 GIT_PS1_SHOWUPSTREAM='git verbose'
 GIT_PS1_DESCRIBE_STYLE=describe
 
-# set up git prompt for macos
-if [ -f $(brew --prefix)/etc/bash_completion.d/git-prompt.sh ]; then
-    . $(brew --prefix)/etc/bash_completion.d/git-prompt.sh
-# or linux
-elif [ -f /usr/lib/git-core/git-sh-prompt ]; then
+# set up git prompt for linux
+if [ -f /usr/lib/git-core/git-sh-prompt ]; then
     . /usr/lib/git-core/git-sh-prompt
 elif [ -f /usr/share/git/completion/git-prompt.sh ]; then
     . /usr/share/git/completion/git-prompt.sh
+# or macos
+elif [ -f $(brew --prefix)/etc/bash_completion.d/git-prompt.sh ]; then
+    . $(brew --prefix)/etc/bash_completion.d/git-prompt.sh
 fi
 
 # set PATH so it includes user's private bin if it exists
