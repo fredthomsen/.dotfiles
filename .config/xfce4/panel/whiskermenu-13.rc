@@ -1,5 +1,5 @@
-favorites=ubuntu-software-center.desktop
-recent=lightdm-gtk-greeter-settings.desktop,ghb.desktop,wireshark.desktop,kupfer.desktop,xfce4-notifyd-config.desktop,xfce-workspaces-settings.desktop,xfce-display-settings.desktop,ubuntu-software-center.desktop,xfce-session-settings.desktop,globaltime.desktop
+favorites=
+recent=xfce-display-settings.desktop,org.gnome.Software.desktop,xfce-wm-settings.desktop,xfce-workspaces-settings.desktop,xfce-ui-settings.desktop,dropbox.desktop,xfce-session-settings.desktop,org.gnome.SoundJuicer.desktop,virt-manager.desktop,xfce4-settings-editor.desktop
 button-title=Applications Menu
 button-icon=ubuntu_badge-symbolic
 button-single-row=false
