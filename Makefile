@@ -25,6 +25,8 @@ zsh:
 vim:
 	ln -sf ~/.dotfiles/.vim/ ~/.vim
 	ln -sf ~/.dotfiles/.vim/.vimrc ~/.vimrc
+	ln -s  ~/.dotfiles/.config/nvim ~/.dotfiles/.vim
+	ln -s  ~/.dotfiles/.vim/.vimrc ~/.dotfiles/.vim/init.vim
 
 emacs:
 	ln -sf ~/.dotfiles/.emacs.d ~/.emacs.d
