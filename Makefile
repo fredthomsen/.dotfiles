@@ -30,6 +30,7 @@ vim:
 
 emacs:
 	ln -sf ~/.dotfiles/.emacs.d ~/.emacs.d
+	ln -sf ~/.dotfiles/.spacemacs ~/.spacemacs
 
 git:
 	ln -sf ~/.dotfiles/.gitconfig ~/.gitconfig
