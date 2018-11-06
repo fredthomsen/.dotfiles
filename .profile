@@ -54,6 +54,9 @@ else
     . $HOME/.git_home
 fi
 
+#so as not to be disturbed by Ctrl-S ctrl-Q in terminals:
+stty -ixon
+
 export TERM=xterm-256color
 export EDITOR=emacs
 export PAGER=most
