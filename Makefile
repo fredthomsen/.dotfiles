@@ -2,7 +2,7 @@
 #
 # Creates symlink to appropriate dot file from home directory
 
-all: sh bash zsh git fonts vim emacs terminal
+all: sh bash zsh git fonts vim terminal
 
 sh:
 	ln -sf ~/.dotfiles/.aliases ~/.aliases
@@ -27,10 +27,6 @@ vim:
 	ln -sf ~/.dotfiles/.vim/.vimrc ~/.vimrc
 	ln -s  ~/.dotfiles/.config/nvim ~/.dotfiles/.vim
 	ln -s  ~/.dotfiles/.vim/.vimrc ~/.dotfiles/.vim/init.vim
-
-emacs:
-	ln -sf ~/.dotfiles/.emacs.d ~/.emacs.d
-	ln -sf ~/.dotfiles/.spacemacs ~/.spacemacs
 
 git:
 	ln -sf ~/.dotfiles/.gitconfig ~/.gitconfig
