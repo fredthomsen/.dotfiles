@@ -40,6 +40,7 @@ fonts:
 terminal:
 	ln -sf ~/.dotfiles/.iterm2 ~/.iterm2
 	ln -sf ~/.dotfiles/.config/terminator/ ~/.config/terminator
+	ln -sf ~/.dotfiles/.Xresources ~/.Xresources
 
 linux_desktop:
 	ln -sf ~/.dotfiles/.themes ~/.themes
@@ -47,7 +48,5 @@ linux_desktop:
 	ln -sf ~/.dotfiles/.wallpaper ~/.wallpaper
 	ln -sf ~/.dotfiles/.xscreensaver ~/.xscreensaver
 	ln -sf ~/.dotfiles/.face ~/.face
-	ln -sf ~/.dotfiles/.config/autostart ~/.config/autostart
-	ln -sf ~/.dotfiles/.config/kupfer ~/.config/kupfer
-	ln -sf ~/.dotfiles/.config/menus ~/.config/menus
-	ln -sf ~/.dotfiles/.config/xfce4 ~/.config/xfce4
+	ln -sf ~/.dotfiles/.config/i3 ~/.config/i3
+	ln -sf ~/.dotfiles/.config/polybar ~/.config/polybar

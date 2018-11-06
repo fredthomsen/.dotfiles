@@ -1,42 +1,34 @@
 [colors]
 accent = #000000
 
-[bar/bottom]
+[bar/main]
 enable-ipc = true
 monitor = HDMI-3
 bottom = true
 width = 100%
 height = 28
-background = #00000000
-foreground = #c4b7c5
+background = #000000
+foreground = #d0d0d0
 spacing = 3
 padding-left = 0
 padding-right = 0
 module-margin-left = 0
 module-margin-right = 6
 
-font-0 = Font Awesome 5 Free Regular:size=9
-font-1 = Font Awesome 5 Free Solid:size=9
-font-2 = Font Awesome 5 Brands Regular:size=9
-font-3 = Zekton:size=8
+font-0 = DejaVuSansMono Nerd Font:size=10
 
-modules-left = powermenu i3
-modules-center = cpu memory filesystem temperature wired-network
-modules-right = pulseaudio clock
+modules-left = i3 powermenu 
+modules-center = cpu memory filesystem temperature wired-network pulseaudio clock
 tray-position = right
 
-[bar/external]
+[bar/secondary]
 enable-ipc = true
 monitor = HDMI-2
 bottom = true
 width = 100%
 height = 28
-dock = true
 
-font-0 = Font Awesome 5 Free Regular:size=9
-font-1 = Font Awesome 5 Free Solid:size=9
-font-2 = Font Awesome 5 Brands Regular:size=9
-font-3 = Zekton:size=8
+font-0 = DejaVuSansMono Nerd Font:size=10
 
 modules-left = i3
 modules-center = xwindow
@@ -69,15 +61,14 @@ index-sort = true
 enable-scroll = true
 
 format = <label-state> 
-format-padding-right = 2
 
-label-unfocused-foreground = #8a7f8f
+label-unfocused-foreground = #d0d0d0
 label-unfocused-padding = 1
 
-label-focused-foreground = #c16772
+label-focused-foreground = #4eb4fa
 label-focused-padding = 1
 
-label-urgent-foreground = #e4b226
+label-urgent-foreground = #960050
 label-urgent-padding = 1
 
 [module/cpu]
@@ -91,7 +82,7 @@ type = internal/memory
 interval = 1
 format = <label>
 format-padding = 2
-label =  %gb_used% (%percentage_used%%)
+label =  %gb_used% (%percentage_used%%)
 
 [module/wired-network]
 type = internal/network
@@ -116,10 +107,10 @@ type = internal/pulseaudio
 sink = alsa_output.pci-0000_00_1b.0.iec958-stereo
 
 format-volume = <ramp-volume><label-volume>
-label-muted = 🔇
-ramp-volume-0 = 
-ramp-volume-1 = 
-ramp-volume-2 = 
+label-muted = ﱝ
+ramp-volume-0 =奄
+ramp-volume-1 = 奔
+ramp-volume-2 = 墳
 ramp-headphones-0 = 
 
 [module/powermenu]
@@ -169,3 +160,7 @@ ramp-1 = 
 ramp-2 = 
 ramp-3 = 
 ramp-4 = 
+
+[global/wm]
+margin-top = 5
+margin-bottom = 5
