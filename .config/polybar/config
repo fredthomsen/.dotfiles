@@ -18,7 +18,7 @@ module-margin-right = 6
 font-0 = DejaVuSansMono Nerd Font:size=10
 
 modules-left = i3 powermenu 
-modules-center = cpu memory filesystem temperature wired-network pulseaudio clock
+modules-center = cpu memory filesystem wired-network pulseaudio clock
 tray-position = right
 
 [bar/secondary]
@@ -121,15 +121,19 @@ label-close =  cancel
 label-open-padding = 2
 label-close-padding = 2 
 
-menu-0-0 =  logout
+menu-0-0 = 
 menu-0-0-exec = menu-open-3
-menu-0-1 =  reboot
+menu-0-1 = 
 menu-0-1-exec = menu-open-1
-menu-0-2 =  power off
+menu-0-2 =  
 menu-0-2-exec = menu-open-2
+menu-0-3 = 
+menu-0-3-exec = i3lock-fancy
+
 menu-0-0-padding = 3
-menu-0-1-padding = 0
+menu-0-1-padding = 3
 menu-0-2-padding = 3
+menu-0-3-padding = 3
 
 menu-1-0 =  reboot?  
 menu-1-0-exec = sudo reboot
@@ -142,24 +146,6 @@ menu-2-0-padding = 3
 menu-3-0 =  logout?  
 menu-3-0-exec = kill -9 -1
 menu-3-0-padding = 3
-
-[module/temperature]
-type = internal/temperature
-interval = 1
-thermal-zone = 0
-warn-temperature = 74
-format = <ramp> <label>
-format-padding = 2
-format-warn = <ramp> <label-warn>
-format-warn-padding = 2
-label = %temperature-c%
-label-warn = %temperature-c%
-label-warn-foreground = #e4b226
-ramp-0 = 
-ramp-1 = 
-ramp-2 = 
-ramp-3 = 
-ramp-4 = 
 
 [global/wm]
 margin-top = 5
