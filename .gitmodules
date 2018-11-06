@@ -1,9 +1,3 @@
-[submodule ".icons/Flat-Remix"]
-	path = .icons/Flat-Remix
-	url = https://github.com/daniruiz/Flat-Remix.git
 [submodule ".vim"]
 	path = .vim
 	url = https://github.com/fredthomsen/.vim.git
-[submodule ".emacs.d"]
-	path = .emacs.d
-	url = git@github.com:fredthomsen/.emacs.d.git
