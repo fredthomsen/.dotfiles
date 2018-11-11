@@ -58,7 +58,7 @@ fi
 stty -ixon
 
 export TERM=xterm-256color
-export EDITOR=emacs
+export EDITOR=vim
 export PAGER=most
 export GPG_TTY=$(tty)
 

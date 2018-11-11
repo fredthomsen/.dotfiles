@@ -40,7 +40,6 @@ fonts:
 terminal:
 	ln -sf ~/.dotfiles/.iterm2 ~/.iterm2
 	ln -sf ~/.dotfiles/.tmux.conf ~/.tmux.conf
-	ln -sf ~/.dotfiles/.config/terminator/ ~/.config/terminator
 	ln -sf ~/.dotfiles/.Xresources ~/.Xresources
 
 linux_desktop:
@@ -51,3 +50,4 @@ linux_desktop:
 	ln -sf ~/.dotfiles/.face ~/.face
 	ln -sf ~/.dotfiles/.config/i3 ~/.config/i3
 	ln -sf ~/.dotfiles/.config/polybar ~/.config/polybar
+	ln -sf ~/.dotfiles/.config/gtk-3.0 ~/.config/gtk-3.0

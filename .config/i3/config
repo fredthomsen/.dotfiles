@@ -170,8 +170,11 @@ exec_always feh --bg-scale /home/fred/.wallpaper
 
 # autostart programs
 exec --no-startup-id synergy-tray
+exec --no-startup-id keybase
+exec --no-startup-id nm-applet
+exec --no-startup-id dunst
 exec --no-startup-id redshift-gtk
-exec --no-startup-id dropbox
+exec --no-startup-id dropbox start
 
 exec --no-startup-id i3-msg 'workspace 1:; exec urxvt'
 exec --no-startup-id i3-msg 'workspace 1:; exec urxvt'
@@ -187,7 +190,7 @@ exec --no-startup-id i3-msg 'workspace 5:; exec signal'
   client.focused          #9999AA #9999AA #FFBA68 #FDF6E3
   client.focused_inactive #101010 #101010 #4EB4FA #454948
   client.unfocused        #101010 #101010 #4EB4FA #454948
-  client.urgent           #CB4B16 #FDF6E3 #4EB4FA #268BD2
+  client.urgent           #960050 #960050 #4EB4FA #268BD2
   client.placeholder      #101010 #0c0c0c #D0D0D0 #101010 
 
 client.background #2B2C2B
