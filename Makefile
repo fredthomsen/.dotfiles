@@ -39,6 +39,7 @@ fonts:
 
 terminal:
 	ln -sf ~/.dotfiles/.iterm2 ~/.iterm2
+	ln -sf ~/.dotfiles/.tmux.conf ~/.tmux.conf
 	ln -sf ~/.dotfiles/.config/terminator/ ~/.config/terminator
 	ln -sf ~/.dotfiles/.Xresources ~/.Xresources
 

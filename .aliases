@@ -22,10 +22,10 @@ alias top='htop'
 
 # terminal aliases
 if [ $(uname) = Linux ]; then
-    alias xfce4-terminal='xfce4-terminal --maximize'
-    alias terminal='terminator'
-    alias term='terminator'
+    alias terminal='urxvt'
+    alias term='urxvt'
 fi
+alias t=tmux
 
 # ls aliases
 if [ $(uname) = Darwin ]; then
