@@ -41,6 +41,7 @@ terminal:
 	ln -sf ~/.dotfiles/.iterm2 ~/.iterm2
 	ln -sf ~/.dotfiles/.tmux.conf ~/.tmux.conf
 	ln -sf ~/.dotfiles/.Xresources ~/.Xresources
+	ln -sf ~/.dotfiles/.xinitrc ~/.xinitrc
 
 linux_desktop:
 	ln -sf ~/.dotfiles/.themes ~/.themes
