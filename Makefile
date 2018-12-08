@@ -52,3 +52,4 @@ linux_desktop:
 	ln -sf ~/.dotfiles/.config/i3 ~/.config/i3
 	ln -sf ~/.dotfiles/.config/polybar ~/.config/polybar
 	ln -sf ~/.dotfiles/.config/gtk-3.0 ~/.config/gtk-3.0
+	ln -sf ~/.dotfiles/.config/dunst ~/.config/dunst
