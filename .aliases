@@ -74,6 +74,9 @@ alias venv='virtualenv .venv && source .venv/bin/activate'
 alias venv3='virtualenv -p python3 .venv3 && source .venv3/bin/activate'
 alias unvenv='deactivate'
 
+# Avoids mouse jitter/lag when spinning up gaming VM
+alias virt-manager='SDL_VIDEO_X11_DGAMOUSE=0 virt-manager'
+
 # webapps
 alias gmail='/opt/google/chrome/google-chrome --app https://mail.google.com'
 alias tweet='/opt/google/chrome/google-chrome --app https://tweetdeck.twitter.com'
