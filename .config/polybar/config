@@ -113,40 +113,6 @@ ramp-volume-1 = 奔
 ramp-volume-2 = 墳
 ramp-headphones-0 = 
 
-[module/powermenu]
-type = custom/menu
-padding = 2
-label-open =   
-label-close =  cancel
-label-open-padding = 2
-label-close-padding = 2 
-
-menu-0-0 = 
-menu-0-0-exec = menu-open-3
-menu-0-1 = 
-menu-0-1-exec = menu-open-1
-menu-0-2 =  
-menu-0-2-exec = menu-open-2
-menu-0-3 = 
-menu-0-3-exec = i3lock-fancy
-
-menu-0-0-padding = 3
-menu-0-1-padding = 3
-menu-0-2-padding = 3
-menu-0-3-padding = 3
-
-menu-1-0 =  reboot?  
-menu-1-0-exec = sudo reboot
-menu-1-0-padding = 3
-
-menu-2-0 =  power off?  
-menu-2-0-exec = sudo poweroff
-menu-2-0-padding = 3
-
-menu-3-0 =  logout?  
-menu-3-0-exec = kill -9 -1
-menu-3-0-padding = 3
-
 [global/wm]
 margin-top = 5
 margin-bottom = 5
