@@ -53,3 +53,12 @@ linux_desktop:
 	ln -sf ~/.dotfiles/.config/polybar ~/.config/polybar
 	ln -sf ~/.dotfiles/.config/gtk-3.0 ~/.config/gtk-3.0
 	ln -sf ~/.dotfiles/.config/dunst ~/.config/dunst
+
+qutebrowser:
+	ln -sf ~/.dotfiles/.config/qutebrowser ~/.config/qutebrowser
+	/usr/share/qutebrowser/scripts/importer.py -q -BK ~/.dotfiles/.info/bookmarks.html > ~/.config/qutebrowser/quickmarks
+
+newsboat:
+	rm ~/.newsboat/urls
+	newsboat -i ~/.dotfiles/.info/rss.opml
+	newsboat -i ~/.dotfiles/.info/youtube.opml
