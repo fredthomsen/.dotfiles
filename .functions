@@ -50,13 +50,3 @@ function extract() {
         echo "'$1' is not a valid file!"
     fi
 }
-
-# Open file in chrome
-function chrome() {
-    google-chrome "$1"
-}
-
-# Google it!
-function google() {
-    google-chrome "https://google.com/search?q=$*"
-}

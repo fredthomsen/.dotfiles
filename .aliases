@@ -76,15 +76,3 @@ alias unvenv='deactivate'
 
 # Avoids mouse jitter/lag when spinning up gaming VM
 alias virt-manager='SDL_VIDEO_X11_DGAMOUSE=0 virt-manager'
-
-# webapps
-alias gmail='/opt/google/chrome/google-chrome --app https://mail.google.com'
-alias tweet='/opt/google/chrome/google-chrome --app https://tweetdeck.twitter.com'
-alias reddit='/opt/google/chrome/google-chrome --profile-directory=Default --app-id=pmfcbbijgnhoebddbjpmlikabnbnddgb'
-alias cal='/opt/google/chrome/google-chrome --app https://calendar.google.com'
-alias github='/opt/google/chrome/google-chrome --app https://www.github.com'
-alias drive='/opt/google/chrome/google-chrome --app https://drive.google.com'
-alias music='/opt/google/chrome/google-chrome --app https://music.google.com'
-alias plex='/opt/google/chrome/google-chrome --profile-directory=Default --app-id=fpniocchabmgenibceglhnfeimmdhdfm'
-alias netflix='/opt/google/chrome/google-chrome --app https://www.netflix.com'
-alias youtube='/opt/google/chrome/google-chrome --app https://www.youtube.com'
