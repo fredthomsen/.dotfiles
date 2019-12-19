@@ -63,9 +63,12 @@ REPORTTIME=10
 # Hostname not available in zsh
 HOSTNAME=$HOST
 
-# set up git prompt for macos
+# set up git prompt for macos or termux
 if [ -f /Applications/Xcode.app/Contents/Developer/usr/share/git-core/git-prompt.sh ]; then
     . /Applications/Xcode.app/Contents/Developer/usr/share/git-core/git-prompt.sh
+fi
+if [ -f /data/data/com.termux/files/usr/etc/bash_completion.d/git-prompt.sh ]; then
+    . /data/data/com.termux/files/usr/etc/bash_completion.d/git-prompt.sh
 fi
 
 # set terminal window titles
