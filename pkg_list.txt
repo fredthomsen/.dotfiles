@@ -18,10 +18,13 @@ handbrake
 htop
 i3-wm
 i3lock
+khal
+khard
 lynx
 make
 most
 mtr
+neomutt
 neovim
 newsboat
 openssh
@@ -40,6 +43,7 @@ tmux
 tox
 traceroute
 transmission-cli
+vdirsyncer
 vim
 virt-manager
 vlc

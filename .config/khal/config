@@ -1,0 +1,20 @@
+[calendars]
+
+[[contacts_local]]
+path = ~/.contacts/*
+type = discover
+
+[[fred_cal_local]]
+path = ~/.calendar/fred/*
+type = discover
+
+[[koa_cal_local]]
+path = ~/.calendar/koa/*
+type = discover
+
+[locale]
+timeformat = %H:%M
+dateformat = %Y-%m-%d
+longdateformat = %Y-%m-%d
+datetimeformat = %Y-%m-%d %H:%M
+longdatetimeformat = %Y-%m-%d %H:%M
