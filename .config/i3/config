@@ -11,7 +11,7 @@ floating_modifier $mod
 bindsym $mod+Return exec urxvt
 bindsym $mod+t exec urxvt
 # start browser
-bindsym $mod+w exec google-chrome
+bindsym $mod+w exec firefox-developer-edition
 # start slack
 bindsym $mod+s exec slack
 
@@ -22,7 +22,7 @@ bindsym $mod+Shift+q kill
 bindsym $mod+space exec rofi -show combi
 
 # lock screen
-bindsym $mod+x exec i3lock-fancy
+bindsym $mod+x exec i3lock
 
 # change focus
 bindsym $mod+h focus left
@@ -133,10 +133,10 @@ bindsym $mod+r mode "resize"
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
-#bar {
-#        status_command i3status
+bar {
+        status_command i3status
 #        tray_output HDMI-3
-#}
+}
     
 # switch to workspace with urgent window automatically
 for_window [urgent=latest] focus
@@ -161,29 +161,12 @@ bindsym XF86AudioPause exec playerctl pause
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
-# set polybar
-exec_always --no-startup-id polybar main
-exec_always --no-startup-id polybar secondary
-
 # set wallpaper
 exec_always feh --bg-scale /home/fred/.wallpaper
 
 # autostart programs
-exec --no-startup-id synergy-tray
-exec --no-startup-id keybase
-exec --no-startup-id nm-applet
 exec --no-startup-id dunst
 exec --no-startup-id redshift-gtk
-exec --no-startup-id dropbox start
-
-exec --no-startup-id i3-msg 'workspace 1; exec urxvt'
-exec --no-startup-id i3-msg 'workspace 1; exec urxvt'
-exec --no-startup-id i3-msg 'workspace 2; exec google-chrome'
-exec --no-startup-id i3-msg 'workspace 3; exec gvim'
-exec --no-startup-id i3-msg 'workspace 4; exec virt-manager'
-exec --no-startup-id i3-msg 'workspace 5; exec slack'
-exec --no-startup-id i3-msg 'workspace 5; exec pidgin'
-exec --no-startup-id i3-msg 'workspace 5; exec signal'
 
 # Theme colors
 # class                   border  backgr. text    indic.   child_border

@@ -4,6 +4,9 @@
 
 all: sh bash zsh git fonts vim terminal
 
+install:
+	pacman -S --needed - < pkg_list.txt
+
 sh:
 	ln -sf ~/.dotfiles/.aliases ~/.aliases
 	ln -sf ~/.dotfiles/.colors ~/.colors
@@ -50,15 +53,14 @@ linux_desktop:
 	ln -sf ~/.dotfiles/.xscreensaver ~/.xscreensaver
 	ln -sf ~/.dotfiles/.face ~/.face
 	ln -sf ~/.dotfiles/.config/i3 ~/.config/i3
-	ln -sf ~/.dotfiles/.config/polybar ~/.config/polybar
+	ln -sf ~/.dotfiles/.config/i3status ~/.config/i3status
 	ln -sf ~/.dotfiles/.config/gtk-3.0 ~/.config/gtk-3.0
 	ln -sf ~/.dotfiles/.config/dunst ~/.config/dunst
 
 qutebrowser:
 	ln -sf ~/.dotfiles/.config/qutebrowser ~/.config/qutebrowser
-	/usr/share/qutebrowser/scripts/importer.py -q -BK ~/.dotfiles/.info/bookmarks.html > ~/.config/qutebrowser/quickmarks
+	/usr/share/qutebrowser/scripts/importer.py -q -BK ~/Documents/.info/bookmarks.html > ~/.config/qutebrowser/quickmarks
 
 newsboat:
 	rm ~/.newsboat/urls
-	newsboat -i ~/.dotfiles/.info/rss.opml
-	newsboat -i ~/.dotfiles/.info/youtube.opml
+	newsboat -i ~/Documents/.info/rss.opml
