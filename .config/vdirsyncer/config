@@ -1,0 +1,53 @@
+[general]
+status_path = "~/.config/vdirsyncer/status/"
+
+[pair contacts]
+a = "contacts_local"
+b = "contacts_remote"
+collections = ["from a", "from b"]
+conflict_resolution = ["command", "vimdiff"]
+
+[storage contacts_local]
+type = "filesystem"
+path = "~/.contacts/"
+fileext = ".vcf"
+
+[storage contacts_remote]
+type = "carddav"
+url = "http://192.168.1.7:9011/fred/bf826f67-f25a-fdf2-d844-1bb4256e8f35/"
+username = "fred"
+password.fetch = ["command", "bad_pass.sh"]
+
+[pair fred_cal]
+a = "fred_cal_local"
+b = "fred_cal_remote"
+collections = ["from a", "from b"]
+conflict_resolution = ["command", "vimdiff"]
+
+[storage fred_cal_local]
+type = "filesystem"
+path = "~/.calendar/fred/"
+fileext = ".ics"
+
+[storage fred_cal_remote]
+type = "caldav"
+url = "http://192.168.1.7:9011/fred/ac2435ac-6692-5f6d-8d43-a30273bddfb1/"
+username = "fred"
+password.fetch = ["command", "bad_pass.sh"]
+
+[pair koa_cal]
+a = "koa_cal_local"
+b = "koa_cal_remote"
+collections = ["from a", "from b"]
+conflict_resolution = ["command", "vimdiff"]
+
+[storage koa_cal_local]
+type = "filesystem"
+path = "~/.calendar/koa/"
+fileext = ".ics"
+
+[storage koa_cal_remote]
+type = "caldav"
+url = "http://192.168.1.7:9011/fred/fa5344a3-b83b-cc40-a6ef-0244267810b6/"
+username = "fred"
+password.fetch = ["command", "bad_pass.sh"]

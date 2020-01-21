@@ -56,6 +56,7 @@ linux_desktop:
 	ln -sf ~/.dotfiles/.config/i3status ~/.config/i3status
 	ln -sf ~/.dotfiles/.config/gtk-3.0 ~/.config/gtk-3.0
 	ln -sf ~/.dotfiles/.config/dunst ~/.config/dunst
+	ln -sf ~/.dotfiles/.config/vdirsyncer ~/.config/vdirsyncer
 
 qutebrowser:
 	ln -sf ~/.dotfiles/.config/qutebrowser ~/.config/qutebrowser
