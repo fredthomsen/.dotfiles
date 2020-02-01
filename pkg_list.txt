@@ -18,13 +18,16 @@ git-annex
 gnupg
 go
 handbrake
+helm
 htop
 i3-wm
 i3lock
 i3status
 khal
 khard
+kubectl
 lynx
+maim
 make
 most
 mtr
