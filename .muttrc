@@ -1,0 +1,12 @@
+set realname='Fred Thomsen'
+
+set mbox_type=Maildir
+set folder=~/.mail/INBOX
+set spoolfile=+/
+set header_cache=~/.cache/mutt
+set editor=vim
+
+set sort=reverse-date # sorting the mails in threads in index (mails-list-view)
+set sort_aux=reverse-last-date-received # and the thread themselves reverse-date
+
+set sendmail="/usr/bin/msmtp"

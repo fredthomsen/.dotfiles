@@ -1,0 +1,50 @@
+IMAPAccount protonmail
+Host 127.0.0.1
+Port 1143
+User spam@fredthomsen.net
+PassCmd "echo $PM_IMAP_PASS"
+SSLType STARTTLS
+SSLVersions TLSv1.2
+CertificateFile ~/.cert/protonmail.crt
+ 
+IMAPStore pm-remote
+Account protonmail
+ 
+MaildirStore pm-local
+Path ~/.mail/
+Inbox ~/.mail/INBOX/
+ 
+Channel pm-inbox
+Master :pm-remote:
+Slave :pm-local:
+Patterns "INBOX"
+Create Both
+Expunge Both
+SyncState *
+ 
+Channel pm-sent
+Master :pm-remote:"Sent"
+Slave :pm-local:"sent"
+Create Both
+Expunge Both
+SyncState *
+ 
+Channel pm-trash
+Master :pm-remote:"Trash"
+Slave :pm-local:"trash"
+Create Both
+Expunge Both
+SyncState *
+ 
+Channel pm-spam
+Master :pm-remote:"Spam"
+Slave :pm-local:"spam"
+Create Both
+Expunge Both
+SyncState *
+ 
+Group protonmail
+Channel pm-inbox
+Channel pm-sent
+Channel pm-trash
+Channel pm-spam
