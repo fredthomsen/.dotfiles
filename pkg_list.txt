@@ -29,6 +29,8 @@ kubectl
 lynx
 maim
 make
+mbsync
+msmtp
 most
 mtr
 neomutt
@@ -36,6 +38,7 @@ neovim
 newsboat
 openssh
 pass
+pv
 python
 qutebrowser
 ranger
@@ -57,6 +60,7 @@ veracrypt
 vim
 virt-manager
 vlc
+watch
 wget
 which
 whois
