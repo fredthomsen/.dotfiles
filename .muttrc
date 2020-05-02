@@ -1,12 +1,173 @@
+# basic
 set realname='Fred Thomsen'
-
+set from="spam@fredthomsen.net"
+alternates .+@fredthomsen.net
 set mbox_type=Maildir
-set folder=~/.mail/INBOX
+set folder=~/.mail
 set spoolfile=+/
-set header_cache=~/.cache/mutt
+set header_cache=~/.mutt/cache/headers
+set message_cachedir=~/.mutt/cache/bodies
+set certificate_file=~/.mutt/certificates
+set tmpdir=~/.mutt/temp
 set editor=vim
+set mail_check_stats
+set quit
 
-set sort=reverse-date # sorting the mails in threads in index (mails-list-view)
-set sort_aux=reverse-last-date-received # and the thread themselves reverse-date
+set implicit_autoview
 
+# compose
+set envelope_from
+set thorough_search
+set edit_headers
+set fast_reply
+set askcc
+set fcc_attach
+set forward_format = "Fwd: %s"
+set forward_decode
+set attribution = "On %d, %n wrote:"
+set reply_to
+set reverse_name
+set include
+set forward_quote
+set text_flowed
 set sendmail="/usr/bin/msmtp"
+
+# index
+set query_command = "khard email --parsable --search-in-source-files '%s'"
+set sort=threads
+set sort_aux=reverse-last-date-received
+set strict_threads
+set confirmappend = no
+set status_chars = " *%A"
+set status_format = "[ Folder: %f ] [%r%m messages%?n? (%n new)?%?d? (%d to delete)?%?t? (%t tagged)? ]%>─%?p?( %p postponed )?"
+set date_format = "%Y/%m/%d %H:%M"
+set uncollapse_jump
+set sort_re
+set reply_regexp = "^(([Rr][Ee]?(\[[0-9]+\])?: *)?(\[[^]]+\] *)?)*"
+set quote_regexp = "^( {0,4}[>|:#%]| {0,4}[a-z0-9]+[>|]+)+"
+set send_charset = "utf-8:iso-8859-1:us-ascii"
+set charset = "utf-8"
+
+# pager
+set pager_index_lines = 10
+set pager_context = 3
+set pager_stop
+set menu_scroll
+unset tilde
+unset markers
+
+# sidebar
+set sidebar_visible
+set sidebar_format = "%B%?F? [%F]?%* %?N?%N/?%S"
+set sidebar_short_path
+set sidebar_folder_indent
+set sidebar_width = 25
+set sidebar_divider_char = ' | '
+set sidebar_indent_string = '  ''
+mailboxes =Inbox =Sent =Spam =Trash =Archive =Folders/Newsletters
+
+# appearance
+color header color1 default ".*"
+color header color2 default "^(From)"
+color header color3 default "^(Subject)"
+color header color4 default "^(CC|BCC)"
+mono bold bold
+mono underline underline
+mono indicator reverse
+mono error bold
+color normal default default
+color indicator color5 default
+color sidebar_highlight color6 default
+color sidebar_divider color7 black
+color sidebar_flagged color8 black
+color sidebar_new color9 black
+color normal color10 default
+color error color11 default
+color tilde black default
+color message color1 default
+color markers color2 white
+color attachment white default
+color search color3 default
+color status color12 black
+color hdrdefault color5 default
+color quoted color6 default
+color quoted1 color7 default
+color quoted2 color8 default
+color quoted3 color9 default
+color quoted4 color10 default
+color quoted5 color11 default
+color signature color12 default
+color bold black default
+color underline black default
+color normal default default
+color body color15 default "[\-\.+_a-zA-Z0-9]+@[\-\.a-zA-Z0-9]+" # Email addresses
+color body color16 default "(https?|ftp)://[\-\.,/%~_:?&=\#a-zA-Z0-9]+" # URL
+
+
+# Keybindings and macros
+# 
+# Navigation
+# ----------------------------------------------------
+
+bind generic             z         noop
+bind index,pager,attach  g         noop
+bind index,pager         d         noop
+bind index,pager         s         noop
+bind index,pager         c         noop
+bind generic,pager       t         noop
+
+bind index,query         <tab>     query
+bind editor              <tab>     complete-query
+bind generic,index,pager \Cf       next-page
+bind generic,index,pager \Cb       previous-page
+bind generic             gg        first-entry
+bind generic,index       G         last-entry
+bind pager               gg        top
+bind pager               G         bottom
+bind generic,pager       \Cy       previous-line
+bind generic,index,pager \Ce       next-line
+bind generic,index,pager \Cd       half-down
+bind generic,index,pager \Cu       half-up
+bind generic             zt        current-top
+bind generic             zz        current-middle
+bind generic             zb        current-bottom
+bind index               za        collapse-thread
+bind index               zA        collapse-all
+bind index,pager         N         search-opposite
+bind index               <Backtab> previous-new-then-unread
+bind index { previous-thread
+bind pager { half-up
+bind index } next-thread
+bind pager } half-down
+bind index,pager <down>   sidebar-next
+bind index,pager <up>     sidebar-prev
+bind index,pager <right>  sidebar-open
+
+# Go to folder...
+macro index,pager gi "<change-folder>=Inbox<enter>"       "open inbox"
+macro index,pager gs "<change-folder>=Sent<enter>"        "open sent"
+macro index,pager ga "<change-folder>=Archive<enter>"     "open archive"
+macro index,pager gt "<change-folder>=Trash<enter>"     "open trash"
+macro index,pager gn "<change-folder>=Folders/Newsletters<enter>"     "open newsletters"
+macro index,pager gf "<change-folder>?"                   "open mailbox..."
+
+# Actions
+# ----------------------------------------------------
+
+bind  index,pager    a   group-reply
+macro index,pager    da  "<save-message>=Archive<enter><sync-mailbox>"                     "move message to archive"
+macro index,pager    dd  "<save-message>=Trash<enter><sync-mailbox>"                                 "move message to trash"
+macro index,pager    dt  "<delete-thread><sync-mailbox>"                                  "move thread to archive"
+bind  generic        tt  tag-entry
+bind  index          tat tag-thread
+bind  pager          tt  tag-message
+macro pager          tat "<exit><mark-message>q<enter><tag-thread>'q<display-message>"    "tag-thread"
+
+macro index,pager    gx  "<pipe-message>urlview<Enter>"                                   "call urlview to extract URLs out of a message"
+macro attach,compose gx  "<pipe-entry>urlview<Enter>"                                     "call urlview to extract URLs out of a message"
+
+# Command Line
+# ----------------------------------------------------
+
+bind editor \Cp history-up
+bind editor \Cn history-down

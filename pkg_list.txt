@@ -23,6 +23,7 @@ htop
 i3-wm
 i3lock
 i3status
+k9s
 khal
 khard
 kubectl
@@ -55,9 +56,9 @@ tmux
 tox
 traceroute
 transmission-cli
+urlview
 vdirsyncer
 veracrypt
-vim
 virt-manager
 vlc
 watch
