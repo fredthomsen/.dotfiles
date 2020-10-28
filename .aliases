@@ -80,3 +80,5 @@ alias virt-manager='SDL_VIDEO_X11_DGAMOUSE=0 virt-manager'
 alias mutt='neomutt -f ~/.mail/Inbox'
 alias neomutt='neomutt -f ~/.mail/Inbox'
 alias vim=nvim
+
+alias prettyjson='python3 -m json.tool'

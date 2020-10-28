@@ -1,7 +1,7 @@
 abcde
 android-tools
 awk
-barrier
+beets
 calibre
 ctags
 curl
@@ -20,6 +20,7 @@ go
 handbrake
 helm
 htop
+irssi
 i3-wm
 i3lock
 i3status
@@ -39,6 +40,7 @@ neovim
 newsboat
 openssh
 pass
+profanity
 pv
 python
 qutebrowser
