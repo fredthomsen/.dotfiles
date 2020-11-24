@@ -20,7 +20,6 @@ go
 handbrake
 helm
 htop
-irssi
 i3-wm
 i3lock
 i3status
@@ -40,7 +39,6 @@ neovim
 newsboat
 openssh
 pass
-profanity
 pv
 python
 qutebrowser
@@ -64,6 +62,7 @@ veracrypt
 virt-manager
 vlc
 watch
+weechat
 wget
 which
 whois

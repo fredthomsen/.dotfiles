@@ -1,0 +1,49 @@
+# general settings
+auto-reload yes
+prepopulate-query-feeds yes
+browser "firefox-developer-edition %u"
+
+# bind keys - vim style
+bind-key h quit articlelist
+bind-key h quit article
+bind-key h quit tagselection
+bind-key h quit feedlist
+bind-key j down feedlist
+bind-key j down tagselection
+bind-key j next articlelist
+bind-key j down article
+bind-key J next-feed articlelist
+bind-key k up feedlist
+bind-key k prev articlelist
+bind-key k up tagselection
+bind-key K prev-feed articlelist
+bind-key k up article
+bind-key l open articlelist
+bind-key l open feedlist
+bind-key l open tagselection
+bind-key G end
+bind-key g home
+bind-key d pagedown
+bind-key u pageup
+bind-key <space> macro-prefix
+
+color listnormal cyan default
+color listfocus black yellow standout bold
+color listnormal_unread  default   default
+color listfocus_unread yellow default bold
+color info red black bold
+color article cyan default
+
+highlight article "^(Title):.*$" yellow default
+highlight article "^(Author):.*$" green default
+highlight article "^(Date):.*$" green default
+highlight article "^(Feed):.*$" green default
+highlight article "https?://[^ ]+" red default
+highlight article "\\[image\\ [0-9]+\\]" green default
+
+macro , open-in-browser
+macro t set browser "tsp youtube-dl --add-metadata -ic"; open-in-browser; set browser linkhandler
+
+download-path "~/Podcasts/%h/%n"
+max-downloads 5
+player "vlc"
