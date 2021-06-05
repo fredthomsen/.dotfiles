@@ -1,0 +1,5 @@
+{
+    "podcast-directory" : "/mnt/media/Podcasts",
+    "maxnum" : 20,
+    "maxage-days": 60
+}
