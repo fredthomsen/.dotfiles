@@ -1,0 +1,13 @@
+directory: ~/Music
+library: ~/.config/beets/library.db
+import:
+  copy: no
+
+plugins: fetchart embedart lastgenre permissions
+embedart:
+  ifempty: no
+  remove_art_file: yes
+
+permissions:
+    file: 444
+    dir: 755
